@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/botton_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="44dip"
+    android:background="@color/all_device_bottom_color">
+
+    <RelativeLayout
+        android:id="@+id/first_selectall_layout_id"
+        android:layout_width="80dip"
+        android:layout_height="match_parent">
+
+        <com.honeywell.hch.airtouch.ui.common.ui.view.BottomIconViewItem
+            android:id="@+id/first_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true">
+
+        </com.honeywell.hch.airtouch.ui.common.ui.view.BottomIconViewItem>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/action_btns_seperator" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/other_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/first_selectall_layout_id">
+
+    </RelativeLayout>
+
+</RelativeLayout>

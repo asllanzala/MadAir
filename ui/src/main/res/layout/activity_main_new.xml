@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.honeywell.hch.airtouch.ui.main.ui.common.view.CustomViewPager
+        android:id="@+id/main_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/alldevice_page_indicator"
+        android:layout_above="@+id/navagate_layout"/>
+
+    <com.honeywell.hch.airtouch.ui.main.ui.title.view.DashboardTitlePageIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/page_indicator" />
+
+    <com.honeywell.hch.airtouch.ui.main.ui.title.view.AllDeviceTitlePageIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/alldevice_page_indicator">
+    </com.honeywell.hch.airtouch.ui.main.ui.title.view.AllDeviceTitlePageIndicator>
+
+    <RelativeLayout
+        android:id="@+id/left_right_indicator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip">
+
+        <RelativeLayout
+            android:id="@+id/left_arrow_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/left_margin">
+
+            <ImageView
+                android:id="@+id/left_arrow_image_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_arrow_left" />
+
+            <RelativeLayout
+                android:id="@+id/left_unnormal_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dip"
+                android:layout_marginRight="-5dip"
+                android:layout_alignRight="@+id/left_arrow_image_id"
+                android:layout_alignTop="@+id/left_arrow_image_id"
+                android:background="@drawable/big_red_dot">
+
+                <TextView
+                    android:id="@+id/left_unnormal_home_size_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:text="2" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/right_arrow_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/left_arrow_id"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            style="@style/right_margin">
+
+            <ImageView
+                android:id="@+id/right_arrow_image_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_arrow_right" />
+
+            <RelativeLayout
+                android:id="@+id/right_unnormal_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dip"
+                android:layout_marginLeft="-5dip"
+                android:layout_alignLeft="@+id/right_arrow_image_id"
+                android:layout_alignTop="@+id/right_arrow_image_id"
+                android:background="@drawable/big_red_dot">
+
+                <TextView
+                    android:id="@+id/right_unnormal_home_size_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/message_contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navagate_layout"/>
+
+    <FrameLayout
+        android:id="@+id/me_contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navagate_layout"/>
+
+    <FrameLayout
+        android:id="@+id/loading_dashborad_contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_above="@+id/navagate_layout"/>
+
+    <FrameLayout
+        android:id="@+id/loading_devices_contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_above="@+id/navagate_layout"/>
+
+    <ListView
+        android:id="@+id/home_city_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/transparent"
+        android:fadingEdge="none"
+        android:visibility="gone"
+        android:background="@drawable/homelist_top"
+        android:dividerHeight="0dp">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/navagate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_top">
+
+        <ImageView
+            android:id="@+id/seperate_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_dropdown_separateline" />
+
+        <com.honeywell.hch.airtouch.ui.main.ui.common.view.BottomNavigationView
+            android:id="@+id/ds_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seperate_line">
+
+        </com.honeywell.hch.airtouch.ui.main.ui.common.view.BottomNavigationView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common color -->
+    <color name="white">#ffffff</color>
+
+    <drawable name="transparent">#00000000</drawable>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+</resources>

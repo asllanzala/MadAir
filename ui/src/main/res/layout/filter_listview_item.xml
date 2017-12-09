@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@drawable/all_device_item_back"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/all_device_device_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/filter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/aqua_filter" />
+
+        <TextView
+            android:id="@+id/filter_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/filter_icon"
+            android:textColor="@color/group_edit_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/filter_name"
+            style="@style/enroll_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/filter_value_rl"
+            android:layout_toRightOf="@id/filter_position"
+            android:text="Pre_Filter" />
+
+        <RelativeLayout
+            android:id="@+id/filter_value_rl"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/filter_shopping_cart">
+
+            <TextView
+                android:id="@+id/filter_remain_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text_common"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/filter_remin_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filter_remain_value_tv"
+                android:layout_centerHorizontal="true"
+                android:text="@string/device_control_filter_remain"
+                android:textColor="@color/text_common"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/filter_shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

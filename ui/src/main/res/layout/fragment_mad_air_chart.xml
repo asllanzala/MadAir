@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="0dp">
+
+    <TextView
+        android:id="@+id/tv_chart_title"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:textSize="15sp"
+        android:textColor="@color/particle_orientation_color"
+        android:text="@string/mad_air_dashboard_filtered_particulars" />
+
+
+    <RelativeLayout
+        android:id="@+id/lLayout_chart_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_chart_title"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_num_unit"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/mad_air_chart_total_bg"
+                android:text="0.00" />
+
+            <TextView
+                android:id="@+id/tv_unit_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/mad_air_chart_total_bg"
+                android:text="@string/mad_air_dashboard_default_unit" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/tv_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:layout_below="@+id/ll_num_unit"
+            android:layout_alignLeft="@id/ll_num_unit"
+            android:layout_alignRight="@id/ll_num_unit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dip"
+            android:layout_marginBottom="3dip"
+            android:background="@color/char_total_line"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_divider"
+            android:textColor="@color/mad_air_chart_total_bg"
+            android:text="@string/mad_air_dashboard_filtered_total" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lLayout_chart_content"
+        android:layout_marginLeft="25dp"
+        android:textSize="10sp"
+        android:textColor="@color/mad_air_dashboard_chart_particle"
+        android:text="@string/mad_air_dashboard_default_unit" />
+
+    <com.honeywell.hch.airtouch.ui.main.ui.dashboard.madair.view.PercentageBar
+        android:id="@+id/bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unit"
+        android:layout_margin="5dp"/>
+
+
+</RelativeLayout>

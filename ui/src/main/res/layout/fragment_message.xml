@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background">
+
+    <include
+        android:id="@+id/message_center_title"
+        layout="@layout/activity_message_title" />
+
+    <RelativeLayout
+        android:id="@+id/message_loading_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_center_title"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/message_loading_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loading_no_message"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/message_loading_tv"
+            style="@style/enroll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_loading_iv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/no_content_yet" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_message_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_center_title"
+        android:layout_marginTop="12.5dp">
+
+        <com.honeywell.hch.airtouch.ui.main.ui.messagecenter.view.PullToRefreshListView
+            android:id="@+id/fragment_message_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/this_bottom_layout_id"
+            android:divider="@null"></com.honeywell.hch.airtouch.ui.main.ui.messagecenter.view.PullToRefreshListView>
+
+        <RelativeLayout
+            android:id="@+id/this_bottom_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/all_device_bottom_color"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/fragment_message_clear_all_tv"
+                style="@style/alldevice_bottom_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="@string/message_clear_all" />
+
+            <TextView
+                android:id="@+id/fragment_message_clear_tv"
+                style="@style/alldevice_bottom_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="@string/message_clear" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common color -->
+    <color name="white">#ffffff</color>
+    <color name="white_95">#f2ffffff</color>
+    <color name="white_90">#E5ffffff</color>
+    <color name="white_85">#D8ffffff</color>
+    <color name="white_80">#CCffffff</color>
+    <color name="white_70">#B2ffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_50">#7fffffff</color>
+    <color name="white_30">#4Cffffff</color>
+    <color name="white_10">#19ffffff</color>
+
+
+    <drawable name="transparent">#00000000</drawable>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_20">#33000000</color>
+    <color name="transparent_70">#b2ffffff</color>
+    <color name="transparent2">#00ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_50">#7f000000</color>
+    <color name="gray_line">#999999</color>
+    <color name="text_common">#222222</color>
+    <color name="blue">#18abe1</color>
+    <color name="blue_default">#f5f5f5</color>
+    <color name="group_edit_text_background">#999999</color>
+    <color name="group_edit_text">#222222</color>
+
+    <!-- enrollment -->
+    <color name="enroll_connect_device_bg">#F7F9FA</color>
+    <drawable name="enroll_dark_blue">#009cc6</drawable>
+    <drawable name="enroll_blue">#18abe1</drawable>
+    <drawable name="enroll_blue2">#00aeef</drawable>
+    <drawable name="enroll_dark_grey">#d3d3d3</drawable>
+    <drawable name="add_home_dark_grey">#575756</drawable>
+    <drawable name="enroll_grey">#e1e1e1</drawable>
+    <color name="enroll_dark_blue2">#0082a5</color>
+    <color name="enroll_dark_blue">#009cc6</color>
+    <color name="enroll_blue">#18abe1</color>
+    <color name="enroll_blue2">#18abe1</color>
+    <color name="enroll_dark_grey">#d3d3d3</color>
+    <color name="enroll_grey">#e1e1e1</color>
+    <color name="enroll_light_grey">#b2b2b2</color>
+    <color name="enroll_text_grey">#706f6f</color>
+    <color name="enroll_title_grey">#878787</color>
+    <color name="enroll_page1_title">#9d9d9d</color>
+    <color name="enroll_password_title">#d1d1d1</color>
+
+    <!-- user menu -->
+    <color name="list_item_bg">#111111</color>
+    <color name="title_bar_bg">#444444</color>
+    <color name="setting_bg">#2f3030</color>
+    <color name="my_place_text">#6f6f6d</color>
+    <color name="edit_city_text">#989898</color>
+
+    <!-- user login/register-->
+    <color name="login_hint_text">#848484</color>
+    <color name="login_button_background">#7f7f7f</color>
+    <color name="login_button_text">#9d9d9c</color>
+    <color name="login_button_text_70">#b29d9d9c</color>
+    <color name="login_background">#575756</color>
+    <color name="menu_pressed">#3c3c3b</color>
+    <color name="password_text">#b2b2b2</color>
+
+    <!-- city list-->
+    <color name="search_background">#eaeaea</color>
+    <color name="list_index">#0097d7</color>
+    <color name="list_catalog">#e9e9e9</color>
+
+    <!-- airTouchFilter-->
+    <color name="pre_filter_bar">#c17bb5</color>
+    <color name="pm25_filter">#d65a67</color>
+    <color name="hisiv_filter">#f6cf4b</color>
+    <color name="filter_no_authorize">#ffc627</color>
+    <color name="firmware">#f6f6f6</color>
+
+    <!--menu-->
+    <color name="menu_text">#d2d2d2</color>
+    <color name="menu_home_text">#9d9d9c</color>
+
+    <!--control-->
+    <color name="control_error_background">#07495e</color>
+    <color name="error_drop_down_bar">#e05d5d</color>
+    <color name="group_control_different">#F1594F</color>
+
+    <!-- PM25 -->
+    <color name="pm_25_worst">#ee3124</color>
+    <color name="pm_25_bad">#ffc627</color>
+    <color name="pm_25_good">#2494e2</color>
+
+    <!-- home -->
+    <color name="air_quality_title">#2092bd</color>
+
+    <!-- emotion page-->
+    <color name="emotion_btn_pick">#ffffff</color>
+    <color name="emotion_btn_unpick">#4Cffffff</color>
+    <color name="pm25_text_color">#ffff00</color>
+
+    <color name="particle_name_color">#504E4E</color>
+    <color name="particle_orientation_color">#666666</color>
+
+    <color name="main_device_pmvalue">#f6e013</color>
+    <color name="emotion_popwindow_color">#535555</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="pale_green">#09ffa2</color>
+
+    <color name="auth_children_color">#555</color>
+    <color name="auth_children_click_color">#888</color>
+    <color name="auth_device_name_color">#ccc</color>
+    <color name="auth_search_text_color">#000222</color>
+    <color name="auth_cancel_text_color">#2494e2</color>
+    <color name="auth_add_text_color">#ccc</color>
+    <color name="auth_add_high_light_color">#f2f2f2</color>
+    <color name="auth_role_color">#ccc</color>
+    <color name="auth_message_title">#4b4d58</color>
+    <color name="auth_message_content1">#4d4f59</color>
+    <color name="auth_message_content">#3c3d47</color>
+
+    <color name="auth_message_remind">#eb736d</color>
+    <color name="auth_message_button">#8bc9f2</color>
+    <color name="water_filter_color">#8c8c8e</color>
+    <color name="enroll_page_background">#f5f5f5</color>
+    <color name="enroll_list_item_select">#2080da</color>
+
+    <color name="all_device_bottom_color">#1b74b0</color>
+
+    <color name="bottom_spactor_color">#608AA6</color>
+    <color name="all_device_head_item">#777</color>
+
+    <color name="create_group_error_tip">#ee3224</color>
+    <color name="sleep_on">#9b59b6</color>
+    <color name="home_on">#2494e2</color>
+    <color name="away_on">#7fb438</color>
+
+    <color name="button_press_default">#b4f5f5f5</color>
+    <color name="button_disable">#cccccc</color>
+
+    <color name="login_new_user_color">#2494e2</color>
+
+    <color name="add_home_listview_bg">#f8f9fa</color>
+    <color name="filter_empty">#f17030</color>
+
+    <color name="ds_clean_now">#F17030</color>
+
+
+    <color name="sign_out_corlor">#eb342e</color>
+    <color name="emotion_text_normal">#2f78cd</color>
+    <color name="top_back_abnormal">#f59791</color>
+    <color name="top_back_normal">#8dc9f2</color>
+    <color name="emotion_device_blue">#419bf9</color>
+
+    <color name="blue_one">#2494e2</color>
+    <color name="purple_one">#9B59B6</color>
+    <color name="yellow_one">#FFC627</color>
+    <color name="green_one">#7FB338</color>
+    <color name="red_one">#FF0000</color>
+
+    <color name="water_emtoion_view">#49B4F1</color>
+    <color name="pm_emtoion_view">#45B6F1</color>
+    <color name="gold">#b89766</color>
+    <color name="list_select_grey">#ebebeb</color>
+
+    <color name="action_bar_bg">#f2f2f2</color>
+
+    <color name="enroll_device_wifi_blue">#5282F0</color>
+
+    <color name="try_demo_color">#2393e2</color>
+
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="mad_air_weather_normal">#FFC627</color>
+    <color name="mad_air_weather_bad">#EE3124</color>
+    <color name="mad_air_percentage_bar_bg">#a9c0d2</color>
+
+    <color name="char_total_line">#140b1126</color>
+
+    <color name="mad_air_chart_total_bg">#0b1126</color>
+    <color name="mad_air_sperate_line">#28d8d8d8</color>
+    <color name="mad_air_battery_progress_green">#bfd89e</color>
+    <color name="mad_air_battery_progress_red">#f4a8a4</color>
+    <color name="mad_air_battery_progress_grey">#dfdfdf</color>
+    <color name="mad_air_dashboard_near_mask">#9b9b9b</color>
+    <color name="mad_air_dashboard_chart_particle">#ababab</color>
+    <color name="mad_air_dashboard_title_bar_background">#378cdd</color>
+    <color name="emotion_title_background">#2b96e3</color>
+    <color name="emotion_tab_line">#f19664</color>
+    <color name="emotion_sperate_line">#d8d8d8</color>
+    <color name="emotion_indoor">#2c93de</color>
+    <color name="emotion_outdoor">#7db337</color>
+    <color name="emotion_outdoor_text_color">#868686</color>
+</resources>

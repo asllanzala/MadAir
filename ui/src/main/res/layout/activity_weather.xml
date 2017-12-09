@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background">
+
+    <ImageView
+        android:id="@+id/background_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/weather_cover" />
+
+
+    <RelativeLayout
+        android:id="@+id/tile_layout_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dark_title_back">
+
+        <RelativeLayout
+            android:id="@+id/actionbar_tile_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/actionbar_tile_bg">
+
+            <FrameLayout
+                android:id="@+id/enroll_back_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/back_white" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout
+            android:id="@+id/network_error_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/title_layout">
+
+        </com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pm_aqi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tile_layout_pw"
+        android:layout_marginTop="60dip"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/pm_text"
+                style="@style/white_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/weather_pm25" />
+
+            <TextView
+                android:id="@+id/pm_value"
+                style="@style/bold_white_25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pm_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:text="" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/weather_separater" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/aqi_text"
+                style="@style/white_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/weather_aqi" />
+
+            <TextView
+                android:id="@+id/aqi_value"
+                style="@style/bold_white_25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aqi_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:text="12" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="170dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_underlayer">
+
+        <LinearLayout
+            android:id="@+id/weather_title"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/today_layout"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/today_text"
+                    style="@style/white_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/weather_today" />
+
+                <TextView
+                    android:id="@+id/today_weather_temperature"
+                    style="@style/white_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/today_text"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/today_sperate_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/today_layout"
+                android:scaleType="fitXY"
+                android:src="@drawable/weather_separater" />
+
+            <TextView
+                android:id="@+id/seven_days"
+                style="@style/white_30_15sp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/today_sperate_view"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="@string/weather_recent" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/weather_title"
+            android:src="@color/white_30" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizon_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="144dip"
+            android:layout_below="@+id/weather_title"
+            android:fillViewport="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/today_hour_list_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/seven_day_list_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/error_msg"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_below="@+id/weather_title"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/white_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/get_weathr_error" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enrollment_bg">
+
+    <RelativeLayout
+        android:id="@+id/page1_title_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <include
+            android:id="@+id/enroll_title_id"
+            layout="@layout/activity_enroll_title" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/devices_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmBtn"
+        android:layout_below="@+id/page1_title_layout1"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal">
+
+        <GridView
+            android:id="@+id/enroll_choose_grid_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="2"></GridView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirmBtn"
+        style="@style/blue_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="doClick"
+        android:text="@string/enroll_selected"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

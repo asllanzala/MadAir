@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/enroll_big_btn"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/loading_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/loading_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <com.honeywell.hch.airtouch.ui.common.ui.view.TypeTextView
+            android:id="@+id/loading_right_tv"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/loading_left_tv"
+            android:text="@string/enroll_loading_type"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

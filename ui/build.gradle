@@ -1,0 +1,139 @@
+apply plugin: 'com.android.library'
+apply plugin: 'jacoco'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    lintOptions {
+        abortOnError false
+    }
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        androidTest.setRoot('src/test')
+    }
+    productFlavors {
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //    compile 'com.umeng.analytics:analytics:latest.integration'
+    //    compile project(':ZXingBarcode')
+    testCompile "junit:junit:4.12"
+    testCompile "org.mockito:mockito-all:1.10.19"
+    testCompile "org.hamcrest:hamcrest-all:1.3"
+    testCompile 'com.android.support:support-annotations:24.0.0'
+    testCompile 'com.squareup.dagger:dagger-compiler:1.2.2'
+    testCompile 'org.robolectric:robolectric:3.0'
+
+    androidTestCompile "junit:junit:4.12"
+    androidTestCompile "org.mockito:mockito-all:1.10.19"
+    androidTestCompile "org.hamcrest:hamcrest-all:1.3"
+    androidTestCompile 'com.android.support:support-annotations:24.0.0'
+    androidTestCompile 'com.squareup.dagger:dagger-compiler:1.2.2'
+    androidTestCompile 'org.robolectric:robolectric:3.0'
+
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile project(':plateform')
+}
+
+android.testOptions.unitTests.all {
+    // configure the set of classes for JUnit tests
+    include '**/*Test.class'
+    //exclude '**/espresso/**/*.class'
+
+    // configure max heap size of the test JVM
+    maxHeapSize = "2048m"
+}
+
+jacoco {
+    toolVersion = "0.7.1.201405082137"
+}
+
+
+def coverageSourceDirs = [
+        '../ui/src/main/java/com/honeywell/hch/airtouch','../plateform/src/main/java/com/honeywell/hch/airtouch'
+]
+
+task jacocoTestReport(type: JacocoReport, dependsOn: "test") {
+    group = "Reporting"
+
+    description = "Generate Jacoco coverage reports"
+
+    classDirectories = fileTree(
+            dir: '../ui/build/intermediates/classes/debug/com/honeywell/hch/airtouch/ui',
+            excludes: ['R.class',
+                       'R$*.class',
+                       '*$ViewInjector*.*',
+                       'BuildConfig.*',
+                       '**/ui/**/*.*',
+                       '**/**/*Activity.*',
+                       '**/*Activity.*',
+                       '**/**/*View.*',
+                       'weather/**/*.*',
+                       'tutorial/**/*.*',
+                       'schedule/controller/*.*',
+                       'Zxing/*.*',
+                       'notification/**/**',
+                       'service/*.*',
+                       'Zxing/**/*.*',
+                       'Manifest*.*']
+    )
+
+    classDirectories += fileTree(
+            dir: '../plateform/build/intermediates/classes/debug',
+            excludes: ['**/R.class',
+                       '**/R$*.class',
+                       '**/*$ViewInjector*.*',
+                       '**/BuildConfig.*',
+                       '**/Manifest*.*']
+    )
+
+    classDirectories += fileTree(
+            dir: '../library/build/intermediates/classes/debug',
+            excludes: ['**/R.class',
+                       '**/R$*.class',
+                       '**/*$ViewInjector*.*',
+                       '**/BuildConfig.*',
+                       '**/**/wheelView/*.*',
+                       '**/**/util/log/*.*',
+                       '**/**/util/NetworkUtil.*',
+                       '**/**/util/StatusBarUtil.*',
+                       '**/**/util/SystemUtils.*',
+                       '**/**/util/ViewHolderUtil.*',
+                       '**/**/util/WifiUtil.*',
+                       '**/**/util/ListViewHeightUtil.*',
+                       '**/**/util/AndroidBug5497*.*',
+                       '**/Manifest*.*']
+    )
+
+    additionalSourceDirs = files(coverageSourceDirs)
+    sourceDirectories = files(coverageSourceDirs)
+    executionData = files('../ui/build/jacoco/testDebugUnitTest.exec')
+
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+
+}

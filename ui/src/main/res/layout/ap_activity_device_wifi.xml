@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/has_permission_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <include
+            android:id="@+id/enroll_title_id"
+            layout="@layout/activity_enroll_title" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/machine_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="35dp"-->
+        <!--android:src="@drawable/enroll_air_touch_s"-->
+        <!--android:layout_below="@id/enroll_title_id" />-->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nextBtn_id"
+            android:layout_below="@+id/enroll_title_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/ap_device_wifi_frame"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/ap_device_wlan_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/enroll_wlan"
+                    android:textColor="@color/enroll_device_wifi_blue"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ap_device_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/enroll_wifi_on"
+                    android:textColor="@color/enroll_device_wifi_blue"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ap_device_toggle" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/enroll_first_separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ap_device_wifi" />
+
+                <TextView
+                    android:id="@+id/ap_device_wifi_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Air Touch XXXX"
+                    android:textColor="@color/text_common"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/ap_device_choose_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/ap_device_choose" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/enroll_separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <TextView
+                style="@style/enroll_separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <TextView
+                style="@style/enroll_separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <TextView
+                style="@style/enroll_separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <TextView
+                style="@style/enroll_separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+        </LinearLayout>
+
+        <com.honeywell.hch.airtouch.ui.enroll.ui.view.EnrollLoadingButton
+            android:id="@+id/nextBtn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/wifi_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

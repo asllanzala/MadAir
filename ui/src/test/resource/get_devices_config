@@ -1,0 +1,138 @@
+[
+    {
+        "deviceType": 1048577,
+        "capability": {
+            "fanOffAllowed": "ALLOWED",
+            "fanAutoAllowed": "ALLOWED",
+            "fanSleepAllowed": "ALLOWED",
+            "nFanSpeeds": "SPEED_7",
+            "nFilters": "FILTERS_2",
+            "filter1ExpiredTime": 6480,
+            "filter2ExpiredTime": 6480,
+            "filter3ExpiredTime": 6480,
+            "homeKitSupport": "DISABLED",
+            "homeKitSoftwareVersion": 0,
+            "filter1Validation": "RFID",
+            "filter1Category": "HEPA_HISIV",
+            "filter2Validation": "RFID",
+            "filter2Category": "HEPA_HISIV",
+            "filter3Validation": "NONE",
+            "filter3Category": "NONE",
+            "rental": "RENTAL_SUPPORT",
+            "lock": "LOCK"
+        }
+    },
+    {
+        "deviceType": 1048592,
+        "capability": {
+            "fanOffAllowed": "ALLOWED",
+            "fanAutoAllowed": "ALLOWED",
+            "fanSleepAllowed": "ALLOWED",
+            "nFanSpeeds": "SPEED_7",
+            "nFilters": "FILTERS_2",
+            "filter1ExpiredTime": 1280,
+            "filter2ExpiredTime": 1280,
+            "filter3ExpiredTime": 0,
+            "homeKitSupport": "DISABLED",
+            "homeKitSoftwareVersion": 0,
+            "filter1Validation": "RFID",
+            "filter1Category": "HEPA_HISIV",
+            "filter2Validation": "RFID",
+            "filter2Category": "HEPA_HISIV",
+            "filter3Validation": "NONE",
+            "filter3Category": "NONE",
+            "rental": "RENTAL_SUPPORT",
+            "lock": "LOCK"
+        }
+    },
+    {
+        "deviceType": 1048578,
+        "capability": {
+            "fanOffAllowed": "ALLOWED",
+            "fanAutoAllowed": "ALLOWED",
+            "fanSleepAllowed": "ALLOWED",
+            "nFanSpeeds": "SPEED_7",
+            "nFilters": "FILTERS_2",
+            "filter1ExpiredTime": 3333,
+            "filter2ExpiredTime": 3333,
+            "filter3ExpiredTime": 3333,
+            "homeKitSupport": "DISABLED",
+            "homeKitSoftwareVersion": 0,
+            "filter1Validation": "RFID",
+            "filter1Category": "HEPA_HISIV",
+            "filter2Validation": "RFID",
+            "filter2Category": "HEPA_HISIV",
+            "filter3Validation": "NONE",
+            "filter3Category": "NONE",
+            "rental": "RENTAL_SUPPORT",
+            "lock": "LOCK"
+        }
+    },
+    {
+        "deviceType": 1048579,
+        "capability": {
+            "fanOffAllowed": "ALLOWED",
+            "fanAutoAllowed": "ALLOWED",
+            "fanSleepAllowed": "ALLOWED",
+            "nFanSpeeds": "SPEED_7",
+            "nFilters": "FILTERS_2",
+            "filter1ExpiredTime": 4444,
+            "filter2ExpiredTime": 4444,
+            "filter3ExpiredTime": 0,
+            "homeKitSupport": "DISABLED",
+            "homeKitSoftwareVersion": 0,
+            "filter1Validation": "RFID",
+            "filter1Category": "HEPA_HISIV",
+            "filter2Validation": "RFID",
+            "filter2Category": "HEPA_HISIV",
+            "filter3Validation": "NONE",
+            "filter3Category": "NONE",
+            "rental": "RENTAL_SUPPORT",
+            "lock": "LOCK"
+        }
+    },
+    {
+        "deviceType": 1048580,
+        "capability": {
+            "fanOffAllowed": "ALLOWED",
+            "fanAutoAllowed": "ALLOWED",
+            "fanSleepAllowed": "ALLOWED",
+            "nFanSpeeds": "SPEED_7",
+            "nFilters": "FILTERS_2",
+            "filter1ExpiredTime": 5555,
+            "filter2ExpiredTime": 5555,
+            "filter3ExpiredTime": 0,
+            "homeKitSupport": "DISABLED",
+            "homeKitSoftwareVersion": 0,
+            "filter1Validation": "RFID",
+            "filter1Category": "HEPA_HISIV",
+            "filter2Validation": "RFID",
+            "filter2Category": "HEPA_HISIV",
+            "filter3Validation": "NONE",
+            "filter3Category": "NONE",
+            "rental": "RENTAL_SUPPORT",
+            "lock": "LOCK"
+        }
+    },
+    {
+        "deviceType": 1048608,
+        "capability": {
+            "filters": [
+                {
+                    "filterType": "1",
+                    "minTimeSetting": 1000,
+                    "maxTimeSetting": 3000,
+                    "minVolumeSetting": 1000,
+                    "maxVolumeSetting": 3000
+                },
+                {
+                    "filterType": "2",
+                    "minTimeSetting": 4000,
+                    "maxTimeSetting": 5000,
+                    "minVolumeSetting": 4000,
+                    "maxVolumeSetting": 5000
+                }
+            ]
+        }
+    }
+]

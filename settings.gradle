@@ -1,0 +1,1 @@
+include ':googleplay', ':yingyongbao', ':library', ':plateform', ':ui'

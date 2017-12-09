@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/image_flag_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/name_textview"
+            style="@style/enroll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_flag_icon"
+            android:layout_centerHorizontal="true" />
+
+
+        <com.honeywell.hch.airtouch.ui.common.ui.view.CustomFontTextView
+            android:id="@+id/value_textview"
+            style="@style/bold_blue_30sp"
+            app:textboldCustom="true"
+            android:layout_below="@id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:id="@+id/detail_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingBottom="2dip"
+            android:paddingTop="2dip"
+            android:text="@string/clean_now_str"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:background="@drawable/botton_corner_bg"
+            android:layout_below="@id/value_textview"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

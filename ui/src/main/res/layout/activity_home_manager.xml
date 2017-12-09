@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enrollment_bg">
+
+    <include
+        android:id="@+id/home_manager_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <RelativeLayout
+        android:id="@+id/home_manager_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/home_manager_no_data" />
+
+            <TextView
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="@string/home_manager_no_data1" />
+
+            <TextView
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/home_manager_no_data2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/home_manager_add_home"
+            style="@style/blue_buton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="doClick"
+            android:text="@string/home_manager_add_home"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/home_manager_el"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_manager_title_id"
+        android:divider="@null"
+        android:fastScrollEnabled="false"
+        android:groupIndicator="@null"
+        android:listSelector="@color/setting_bg"
+        android:scrollbars="none"></ListView>
+</RelativeLayout>

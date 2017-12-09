@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background"
+    android:orientation="horizontal">
+
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <ScrollView
+        android:id="@+id/aqua_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_id"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/fragment_auqa_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <RelativeLayout
+                android:id="@+id/aqua_quality_layout"
+                android:layout_width="match_parent"
+                android:layout_height="122.5dp">
+
+                <com.honeywell.hch.airtouch.ui.common.ui.view.TypeTextView
+                    android:id="@+id/aqua_quality_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/auth_cancel_text_color"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/water_quality_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aqua_quality_value"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/water_quality"
+                    android:textColor="@color/text_common"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    style="@style/separateline_long"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" />
+                <!--<TextView-->
+                <!--style="@style/device_control_gray_line"-->
+                <!--android:layout_alignParentBottom="true" />-->
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/device_control_mode_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="visible">
+
+                <RadioGroup
+                    android:id="@+id/command_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="115dp"
+                    android:layout_marginRight="115dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/home_radio"
+                            style="@style/ModeCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/ic_regular_grey"
+                            android:text="@string/water_home_mode"
+                            android:textColor="@color/text_common"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/away_radio"
+                            style="@style/ModeCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/ic_holiday_grey"
+                            android:text="@string/water_away_mode"
+                            android:textColor="@color/text_common"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RadioGroup>
+
+                <ImageView
+                    style="@style/separateline_long"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" />
+                <!--<TextView-->
+                <!--style="@style/device_control_gray_line"-->
+                <!--android:layout_alignParentBottom="true" />-->
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/device_error_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/device_alert_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/device_control_error" />
+
+
+                <TextView
+                    android:id="@+id/device_alert_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/gray_line"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/device_alert_aralm_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp">
+
+                    <ImageView
+                        android:id="@+id/device_error_alarm_iv1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/alert_mode_small" />
+
+                    <TextView
+                        android:id="@+id/device_alert_aralm_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/device_error_alarm_iv1"
+                        android:lineSpacingExtra="8dp"
+                        android:textColor="@color/text_common"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/device_offline_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/device_control_offline_remind_step1"
+                        android:textColor="@color/text_common"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/device_control_offline_remind_step2"
+                        android:textColor="@color/text_common"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/device_control_offline_remind_step3"
+                        android:textColor="@color/text_common"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/offline_resolve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="8dp"
+                        android:text="@string/device_control_offline_remind_step4"
+                        android:textColor="@color/text_common"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/device_offline_error_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/device_error_alarm_iv"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/alert_mode_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/device_error_alarm_iv"
+                            android:text="@string/device_control_offline_error_title"
+                            android:textColor="@color/text_common"
+                            android:textSize="13dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/device_offline_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="8dp"
+                        android:textColor="@color/text_common"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/device_power_off_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/device_control_power_off_tv"
+                        style="@style/device_control_button_item"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/device_poweroff_btn"
+                        android:onClick="doClick"
+                        android:text="@string/device_control_power" />
+
+                </LinearLayout>
+
+                <!--<TextView-->
+                <!--android:id="@+id/error_line"-->
+                <!--style="@style/device_control_gray_line"-->
+                <!--android:layout_marginTop="12dp" />-->
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/error_line"
+                style="@style/separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/filter_title_layout_for_unAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/filter_title_text_layout_for_unAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/enroll_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/water_filter_no_permission" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView
+                android:id="@+id/device_filter_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null"></com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

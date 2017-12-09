@@ -1,0 +1,25 @@
+[
+    {
+        "locationName": "Name",
+        "locationId": 1234,
+        "isLocationOwner": true,
+        "deviceList": [
+            {
+                "deviceName": "Name",
+                "deviceId": 28450,
+                "deviceType": 1048577,
+                "ownerName": "Name",
+                "ownerId": 788,
+                "role":"400",
+                "AuthorityTo": [
+                    {
+                        "grantToUserName": "Name",
+                        "grantToUserId": 7881,
+                        "role": 100，
+                        "status"：1
+                    }
+                ]
+            }
+        ]
+    }
+]

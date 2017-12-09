@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background"
+    android:orientation="horizontal">
+
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/activity_group_title" />
+
+    <ScrollView
+        android:id="@+id/group_control_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/this_bottom_layout_id"
+        android:layout_below="@id/title_id"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/group_control_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.honeywell.hch.airtouch.ui.control.ui.group.view.GroupControlView
+                android:id="@+id/group_control_GroupControlView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.honeywell.hch.airtouch.ui.control.ui.group.view.GroupControlView>
+
+            <com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView
+                android:id="@+id/group_control_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"></com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.honeywell.hch.airtouch.ui.common.ui.view.BottomView
+        android:id="@+id/this_bottom_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"></com.honeywell.hch.airtouch.ui.common.ui.view.BottomView>
+
+</RelativeLayout>

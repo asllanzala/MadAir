@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_fragment_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5">
+
+        <ImageView
+            android:id="@+id/top_bg_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_top_blue_bg" />
+
+
+        <RelativeLayout
+            style="@style/left_right_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/home_status_icon"
+                android:layout_width="120dip"
+                android:layout_height="120dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/normal_big_round_icon" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_below="@id/home_status_icon"
+                android:layout_alignParentBottom="true">
+
+                <com.honeywell.hch.airtouch.ui.common.ui.view.CenterTextView
+                    android:id="@+id/home_status_id"
+                    style="@style/bold_white_15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dip"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="@string/no_device_worse"
+                    app:showModel="center"
+                    app:textbold="false" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/no_device_top_text"
+                style="@style/bold_white_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/nodevice_top_text"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ds_has_device_secondlay_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_below="@id/top_view"
+        android:layout_weight="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/second_layout"
+                style="@style/left_right_margin"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="8">
+
+                <RelativeLayout
+                    android:id="@+id/emotion_icon_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip">
+
+                    <ImageView
+                        android:id="@+id/emotion_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/emotion" />
+                </RelativeLayout>
+
+                <com.honeywell.hch.airtouch.ui.main.ui.dashboard.view.HomeImageTextView
+                    android:id="@+id/home_device_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/emotion_icon_layout"></com.honeywell.hch.airtouch.ui.main.ui.dashboard.view.HomeImageTextView>
+
+                <TextView
+                    android:id="@+id/unsupport_text_id"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/unsupport_device_msg_str"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/seperate_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_dropdown_separateline" />
+
+            <RelativeLayout
+                android:id="@+id/third_layout"
+                style="@style/left_right_margin"
+                android:layout_width="match_parent"
+                android:layout_height="140dip"
+                android:layout_below="@id/second_layout">
+
+                <RelativeLayout
+                    android:id="@+id/schedule_icon_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip">
+
+                    <ImageView
+                        android:id="@+id/ctrl_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/set_arrive_home" />
+                </RelativeLayout>
+
+                <com.honeywell.hch.airtouch.ui.main.ui.dashboard.view.HomeImageTextView
+                    android:id="@+id/home_control_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/schedule_icon_layout"></com.honeywell.hch.airtouch.ui.main.ui.dashboard.view.HomeImageTextView>
+
+                <TextView
+                    android:id="@+id/auth_ctrl_view_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/authorization_home_ctrl_str"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ds_no_device_secondlay_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_below="@id/top_view"
+        android:layout_weight="6"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/add_gray_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ds_top_no_device" />
+
+
+            <TextView
+                android:id="@+id/loading_text_id"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_gray_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/tap_add_device_msg" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

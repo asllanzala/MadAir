@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/emotion_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/emotion_root_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <TextView
+                    android:id="@+id/tv_line_chart_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/particle_orientation_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_line_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_line_chart_title"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/emotion_air_unit"
+                    android:textColor="@color/mad_air_dashboard_chart_particle"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <com.honeywell.hch.airtouch.ui.emotion.ui.view.LineChartView
+                    android:id="@+id/line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_line_unit"
+                    android:layout_margin="5dp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/emotion_outdoor_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:background="@color/emotion_outdoor" />
+
+                    <TextView
+                        android:id="@+id/emotion_outdoor_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/emotion_outdoor_text_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:background="@color/emotion_indoor" />
+
+                <TextView
+                    android:id="@+id/emotion_indoor_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/emotion_outdoor_text_color"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/emotion_indoor_worse_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="9dp"
+                android:text="@string/emotion_indoor_air_worse"
+                android:textColor="@color/mad_air_dashboard_near_mask"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_bar_chart_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/particle_orientation_color"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/lLayout_bar_chart_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_bar_chart_title"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_bar_num_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_unit_top_approx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/emotion_air_approx"
+                            android:textColor="@color/mad_air_chart_total_bg"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_bar_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/mad_air_chart_total_bg"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tv_unit_top_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mad_air_chart_total_bg"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/tv_bar_divider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:layout_alignLeft="@id/ll_bar_num_unit"
+                        android:layout_alignRight="@id/ll_bar_num_unit"
+                        android:layout_below="@+id/ll_bar_num_unit"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:background="@color/char_total_line"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/tv_bar_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_bar_divider"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/mad_air_dashboard_filtered_total"
+                        android:textColor="@color/mad_air_chart_total_bg"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_bar_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/lLayout_bar_chart_content"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/mad_air_dashboard_chart_particle"
+                    android:textSize="10sp" />
+
+                <com.honeywell.hch.airtouch.ui.emotion.ui.view.BarChartView
+                    android:id="@+id/bar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_bar_unit"
+                    android:layout_margin="5dp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

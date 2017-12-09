@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/me_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- layer 1 : city area -->
+    <RelativeLayout
+        android:id="@+id/city_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/mad_air_dashboard_pm25_good">
+
+        <RelativeLayout
+            android:id="@+id/city_area_tv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <RelativeLayout
+                android:id="@+id/has_network_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_bar_pm25_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title_bar_pm25_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_bar_pm25_value_tv"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/device_pm25"
+                    android:textColor="@color/white_60"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/title_bar_need_mask_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_bar_pm25_tv"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <com.honeywell.hch.airtouch.ui.common.ui.view.TypeTextView
+                    android:id="@+id/title_bar_right_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_bar_pm25_tv"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@+id/title_bar_need_mask_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/enroll_loading_type"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/no_network_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/home_status_icon"
+                    android:layout_width="120dip"
+                    android:layout_height="120dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/network_error_icon" />
+
+                <TextView
+                    android:id="@+id/no_network_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_status_icon"
+                    android:layout_marginTop="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mad_air_add_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/locating_fail_button_ic"
+            android:text="@string/add_location"
+            android:textColor="@color/text_common"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <!-- layer 2 : status bar + info area -->
+    <com.honeywell.hch.airtouch.ui.main.ui.dashboard.madair.view.MadAirScrollView
+        android:id="@+id/dashboard_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- device status bar -->
+            <LinearLayout
+                android:id="@+id/device_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_shadow"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/device_status_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/device_status_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:clickable="false"
+                            android:textColor="@color/text_common"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/disconnect_desc_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/mad_air_dashboard_near_mask"
+                        android:visibility="gone"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/device_status_bar"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <!-- info area 3.1 (freq) -->
+                <include
+                    android:id="@+id/breath_freq_section"
+                    layout="@layout/fragment_mad_air_breath" />
+
+                <ImageView
+                    android:id="@+id/line1"
+                    style="@style/left_right_15_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/mad_air_sperate_line"
+                    android:scaleType="fitXY" />
+
+                <!-- info area 3.2 (battery) -->
+                <include
+                    android:id="@+id/battery_circle_section2"
+                    layout="@layout/fragment_mad_air_battery" />
+
+                <ImageView
+                    android:id="@+id/line2"
+                    style="@style/left_right_15_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/mad_air_sperate_line"
+                    android:scaleType="fitXY" />
+
+                <!-- info area 3.3 (chart) -->
+                <include
+                    android:id="@+id/chart_section3"
+                    layout="@layout/fragment_mad_air_chart" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </com.honeywell.hch.airtouch.ui.main.ui.dashboard.madair.view.MadAirScrollView>
+
+    <!-- layer 3 : title bar -->
+    <RelativeLayout
+        android:id="@+id/title_bar_my_mask_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/mad_air_dashboard_title_bar_background"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/top_title_bar_my_mask_tv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/top_title_bar_pm25_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_title_bar_pm25_tv"
+                android:layout_centerHorizontal="true"
+                android:text="@string/device_pm25"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

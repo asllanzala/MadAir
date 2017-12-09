@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background">
+
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <Button
+        android:id="@+id/startConnectBtn"
+        style="@style/blue_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="doClick"
+        android:text="@string/enroll_name_done"
+        android:textAllCaps="false"
+        android:visibility="visible" />
+
+    <!--<include-->
+    <!--android:id="@+id/auth_permission_btn"-->
+    <!--layout="@layout/activity_authorization_btn" />-->
+
+    <ScrollView
+        android:id="@+id/auth_permission_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_id"
+        android:layout_marginBottom="55dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/auth_permission_mode_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <!--<TextView-->
+                <!--android:id="@+id/auth_permission_mode_title_tv"-->
+                <!--style="@style/Authorize_big_size_text"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/authorize_select_role" />-->
+
+            <RadioGroup
+                android:id="@+id/auth_permission_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RadioButton
+                    android:id="@+id/auth_permission_control_rb"
+                    style="@style/enroll_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_marginTop="25dp"
+                    android:drawableLeft="@drawable/auth_radio_btn_selector"
+                    android:drawablePadding="10dp"
+                    android:text="@string/authorize_control_role" />
+
+                <TextView
+                    android:id="@+id/auth_permission_control_tv"
+                    style="@style/Authorize_sub_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/authorize_controler_remind" />
+
+                <RadioButton
+                    android:id="@+id/auth_permission_read_rb"
+                    style="@style/enroll_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/auth_radio_btn_selector"
+                    android:drawablePadding="10dp"
+                    android:text="@string/authorize_viewer_role" />
+
+                <TextView
+                    android:id="@+id/auth_permission_read_tv"
+                    style="@style/Authorize_sub_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/authorize_viewer_remind" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background"
+    android:gravity="center_horizontal">
+
+    <include
+        android:id="@+id/enroll_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <LinearLayout
+        android:id="@+id/enroll_device_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enroll_title_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/enroll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enroll_before_play_content" />
+
+        <TextView
+            style="@style/enroll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/enroll_before_play_step1" />
+
+        <TextView
+            style="@style/enroll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/enroll_before_play_step2" />
+
+        <TextView
+            style="@style/enroll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/enroll_before_play_step3" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ap_mode_entrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:text="@string/enroll_qr_code"
+        android:textColor="@color/enroll_blue2"
+        android:textSize="16sp" />
+
+</RelativeLayout>

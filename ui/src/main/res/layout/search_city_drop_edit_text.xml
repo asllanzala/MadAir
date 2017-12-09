@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.honeywell.hch.airtouch.ui.common.ui.view.HPlusEditText
+        android:id="@+id/search_place_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_place_tv"
+        android:layout_marginTop="15dp"
+        android:maxLength="14"
+        android:singleLine="true" />
+
+    <ListView
+        android:id="@+id/home_city_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_place_et"
+        android:background="@drawable/add_home_listview_shape"
+        android:divider="@color/group_edit_text"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@color/transparent"></ListView>
+
+
+</RelativeLayout>

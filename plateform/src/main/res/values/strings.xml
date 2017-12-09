@@ -1,0 +1,153 @@
+<resources>
+    <string name="wapi_router_security_open">None</string>
+    <string name="wapi_router_security_wep">WEP</string>
+    <string name="wapi_router_security_wpa_aes">WPA AES</string>
+    <string name="wapi_router_security_wpa_tkip">WPA TKIP</string>
+    <string name="wapi_router_security_wpa2_aes">WPA2 AES</string>
+    <string name="wapi_router_security_wpa2_tkip">WPA2 TKIP</string>
+    <string name="wapi_router_security_wpa2_mixed">WPA2 Mixed</string>
+
+    <string name="my_home">My home</string>
+    <string name="enroll_home">Name your home</string>
+
+    <string name="places_care_home">My home(s)</string>
+
+    <string name="enroll_location">Name your location</string>
+    <string name="my_location">My location</string>
+    <string name="places_care_location">My locations</string>
+
+    <string name="airtouch_x_str">Air Touch-X</string>
+    <string name="airtouch_xcompact_str">Air Touch-X2</string>
+    <string name="airtouch_x3compact_str">Air Touch-X3</string>
+    <string name="airtouch_p_str">Air Touch-P WiFi</string>
+    <string name="airtouch_ffac_str">Air Big 2</string>
+    <string name="smart_ro_600_str">Aqua Touch RO 600S</string>
+    <string name="smart_ro_400_str">Aqua Touch RO 400S</string>
+    <string name="mad_air_enroll_name_device">Mad Air</string>
+    <string name="smart_ro_100_str">Aqua Touch RO 100S</string>
+    <string name="smart_ro_75_str">Aqua Touch RO 75S</string>
+    <string name="smart_ro_50_str">Aqua Touch RO 50S</string>
+
+    <string name="offline">Offline</string>
+    <string name="off">Off</string>
+    <string name="speed_low">Low speed</string>
+    <string name="speed_medium">Medium speed</string>
+    <string name="speed_high">High speed</string>
+
+
+    <string name="pre_filter">Pre-Filter</string>
+    <string name="pm25_filter">HEPA Filter</string>
+    <string name="hisiv_filter">HiSiv Filter</string>
+    <string name="hisiv_composite_filter">HiSiv Composite Filter</string>
+
+
+    <string name="pre_filter_instruction">It can filter hair and large particles. It\'s helpful to extend the life of
+        other filters.</string>
+    <string name="pm25_filter_instruction">It can effectively filter PM2.5 and PM0.3 particles. High capacity and low resistance.</string>
+    <string name="hisiv_filter_instruction">It can filter multiple harmful gases (e.g., Formaldehyde). It keeps high effiency even in humid environment.</string>
+    <string name="hisiv_450_filter_instruction">HiSivTM composite filter can effectively filter particulate matter and formaldehyde.</string>
+
+    <string name="hisiv_composite_filter_instruction">HiSiv composite filter can effectively filter particulate matter and formaldehyde.</string>
+
+
+    <string name="airtouch_s_str">Air Touch-S</string>
+
+
+    <string name="airpremium_filter_des">It can effectively filter PM2.5 particles and formaldehyde.</string>
+    <string name="airpremium_filter_title">PolyTech Filter</string>
+
+    <string name="composite_filter">Composite Filter Cartridge</string>
+    <string name="aqua_600_membrane_filter">600G RO Filter Cartridge</string>
+    <string name="aqua_400_membrane_filter">400G RO Filter Cartridge</string>
+
+    <string name="aqua_100_membrane_filter">100G RO Filter Cartridge</string>
+    <string name="aqua_75_membrane_filter">75G RO Filter Cartridge</string>
+    <string name="aqua_50_membrane_filter">50G RO Filter Cartridge</string>
+
+    <string name="carbon_filter">Active Carbon Filter Cartridge</string>
+    <string name="composite_filter_instruction">Filter sediment, rust, suspended solids and etc. Remove heterochrome, odor and residual chlorine.</string>
+    <string name="membrane_filter_instruction">Filter heavy metal, bacteria.</string>
+    <string name="carbon_filter_instruction">Improve water taste.</string>
+
+    <string name="tvoc450_good">Good</string>
+    <string name="tvoc450_average">Avg</string>
+    <string name="tvoc450_poor">Poor</string>
+
+    <string name="water_home_mode">Regular</string>
+    <string name="water_away_mode">Holiday</string>
+
+    <string name="water_pump_over_alarm">Device kept pumping water for 30 minutes. It has been shut off for safety matter. \nPlease replug power cord to recover it. If it doesn\'t work, please contact customer care.</string>
+    <string name="pump_bootup_alarm">Device worked too frequently in a short time. It has been shut off for safety matter. \nPlease replug power cord to recover it. If it doesn\'t work, please contact customer care.</string>
+    <string name="pump_fault_alarm">Device error detected! Error code: 010. \nPlease contact customer care.</string>
+    <string name="pipe_block_alarm">Device error detected! Error code: 011. \nPlease contact customer care.</string>
+    <string name="inftds_alarm">Device error detected! Error code: 012. \nPlease contact customer care.</string>
+    <string name="outtds_alarm">Device error detected! Error code: 013. \nPlease contact customer care.</string>
+    <string name="water_leak_alarm">Water leaking detected！Device valve has been shut off for safety matter. \nPlease clear waste water container to recover the device. If it doesn\'t work, please contact customer care.</string>
+    <string name="eeprom_alarm">Device error detected! Error code: 015. \nPlease contact customer care.</string>
+    <string name="no_water">Low water pressure detected by device! Device was shut off! \nPlease check if water supply is cut off. If water supply is OK but device still cannot work, please shut off input valve and contact customer care. </string>
+    <string name="water_unknow_alarm">Unknown error detected! \nPlease contact customer care.</string>
+
+    <string name="control_auto">Auto</string>
+    <string name="control_quick">Quick</string>
+    <string name="control_silent">Quiet</string>
+    <string name="control_sleep">Sleep</string>
+
+    <string name="all_device_fan_speed">Fan Speed %s</string>
+
+    <string name="authorize_control_role">Controller</string>
+    <string name="authorize_viewer_role">Observer</string>
+    <string name="authorize_master_role">Master</string>
+    <string name="authorize_wait">Waiting</string>
+    <string name="authorize_accept">Accepted</string>
+
+    <string name="authorize_message_title_accept">Device Sharing Accepted</string>
+    <string name="authorize_message_title_decline">Device Sharing Declined</string>
+    <string name="authorize_message_remove">Shared Device Removed</string>
+    <string name="authorize_message_invitation">Device Sharing Invitation</string>
+    <string name="authorize_message_degrade">Device Sharing Role Changed</string>
+    <string name="authorize_message_revoke">Device Sharing Revoked</string>
+    <string name="authorize_send_invitation_device">Device</string>
+    <string name="authorize_authorize">Share</string>
+    <string name="authorize_remove">Remove</string>
+    <string name="authorize_revoke">Revoke</string>
+    <string name="all_device_unsupport_device">Unsupported Device</string>
+    <string name="authorize_group_detail">Detail</string>
+    <string name="authorize_send_invitation_group">Group</string>
+    <string name="authorize_message_device">Device:</string>
+    <string name="authorize_message_group">Group:</string>
+
+    <string name="tell_someone_care">Tell someone you care</string>
+    <string name="home_manager_home_s">\'s home(s)</string>
+
+    <string name="group_control_time_out">Group control time out! Please try again.</string>
+    <string name="group_control_all_fail">All devices didn\'t respond to group control!</string>
+
+    <!-- Mad Air-->
+    <string name="dash_borad_home_menu">Home</string>
+    <string name="dash_borad_personal_menu">Portable</string>
+    <string name="mad_air_portable_devices">Portable Devices</string>
+    <string name="mad_air_disconnected">Disconnected</string>
+    <string name="mad_air_connected">Connected</string>
+    <string name="mad_air_wearing">Wearing</string>
+    <string name="mad_air_filter">Filter</string>
+
+    <string name="cache_loading_msg_justnow">Last update: Just now. </string>
+    <string name="cache_loading_msg_seconds">Last update: %1$s seconds ago. </string>
+    <plurals name="update_minute">
+        <item quantity="one">Last update: 1 minute ago</item>
+        <item quantity="other">Last update: %1$s minutes ago</item>
+    </plurals>
+
+    <plurals name="update_hours">
+        <item quantity="one">Last update: 1 hour ago</item>
+        <item quantity="other">Last update: %1$s hours ago</item>
+    </plurals>
+
+    <plurals name="update_days">
+        <item quantity="one">Last update: 1 day ago</item>
+        <item quantity="other">Last update: %1$s days ago</item>
+    </plurals>
+
+
+    <string name="purchase_url_suffix">version=%1$s&amp;model=%2$s&amp;product=%3$s&amp;country=China</string>
+</resources>

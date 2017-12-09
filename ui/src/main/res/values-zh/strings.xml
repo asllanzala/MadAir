@@ -1,0 +1,736 @@
+<resources>
+    <string name="app_name">H Plus</string>
+    <string name="cancel">取消</string>
+    <string name="notice">提示</string>
+    <!--common-->
+    <string name="ok">确定</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="retry">重试</string>
+    <string name="no_data">没有数据</string>
+    <string name="not_connect_device_network">无法和设备通信！请拔掉并重新插上电源然后重试。</string>
+
+
+    <!-- enrollment -->
+    <string name="enroll_title4">给您的设备取名</string>
+    <string name="enroll_scanning">正在扫描</string>
+    <string name="enroll_scanning_welcome">正在获取数据，请稍候</string>
+    <string name="enroll_connecting">正在连接</string>
+    <string name="enroll_home_wifi">家庭网络WIFI</string>
+    <string name="enroll_networks">可用网络</string>
+    <string name="enroll_next">下一步</string>
+    <string name="enroll_password">密码</string>
+    <string name="enroll_hint_ssid">请输入网络名称</string>
+    <string name="enroll_ssid_security">网络安全性</string>
+    <string name="enroll_done">完成</string>
+    <string name="done">完成</string>
+    <string name="enroll_other">其他&#8230;</string>
+    <string name="enroll_error">操作失败！请重试</string>
+    <string name="quit">要退出吗？</string>
+    <string name="error_code_10">您上次输入的Wi-Fi密码不正确，请确保本次输入正确的家庭Wi-Fi密码</string>
+    <string name="error_code_20">您上次输入的家庭Wi-Fi网络无法找到，请使用一个有效的家庭Wi-Fi网络</string>
+    <string name="error_code_30">您上次输入的家庭Wi-Fi网络无法找到，请使用一个有效的家庭Wi-Fi网络</string>
+    <string name="enroll_page3_title_line1">把设备连到WiFi</string>
+    <string name="enroll_page2_title_line3">给它取个小名</string>
+    <string name="enroll_page2_title_line4">家的位置</string>
+    <string name="enroll_name_done">下一步</string>
+    <string name="enroll_selected">已选择</string>
+
+
+    <!-- user register, login -->
+    <string name="login_forget_password">忘记密码</string>
+    <string name="login_new_user">注册</string>
+    <string name="login">登录</string>
+    <string name="log_in">登录中...</string>
+    <string name="register">注册</string>
+
+    <string name="register_nick_name">用户名</string>
+    <string name="register_confirm_password">确认密码</string>
+    <string name="password_not_match">密码和确认密码不匹配，请检查更正后再试。</string>
+    <string name="non_activated">账号未激活！请先激活您的账号，如果您激活账号遇到问题，请联系客服。</string>
+    <string name="change_password_invalid">更改密码失败！无效的旧密码。</string>
+
+    <!-- edit home  -->
+    <string name="renaming">正在编辑家...</string>
+    <string name="name_place">给家取个名字</string>
+    <string name="home_name_empty">家的名字不能为空！</string>
+    <string name="city_not_found">无法找到该城市！</string>
+
+    <!-- add device  -->
+    <string name="enroll_select_city">请选择城市</string>
+
+    <string name="my_device">客厅的设备</string>
+    <string name="enroll_loading">正在加载</string>
+    <string name="adding_home">正在添加家...</string>
+    <string name="deleting_home">正在删除家...</string>
+    <string name="delete_device_fail">设备删除失败！请重试。</string>
+    <string name="device_no_auth">您只能查看设备信息。</string>
+    <string name="group_no_auth">您只能查看组信息。</string>
+    <string name="select_location">选择定位城市</string>
+    <string name="search">正在搜索&#8230;</string>
+    <string name="gps">位置:</string>
+    <string name="same_home">该位置已存在！</string>
+    <string name="device_already_registered_authorize">您无法添加别人分享给您的设备！</string>
+
+    <!-- control device  -->
+    <string name="control_manual">手动</string>
+
+
+    <string name="control_timeout">操作超时，请重试</string>
+    <string name="get_home_at">预约时间为</string>
+    <string name="clean_time_prex">预计清理时长</string>
+    <string name="clean_time_default">20 分钟</string>
+    <string name="clean_time_hour">%1$d小时</string>
+    <string name="clean_time_minute">%1$d分钟</string>
+
+    <!-- device status -->
+    <string name="device_pm25">PM2.5</string>
+
+
+    <!--menu-->
+
+    <string name="change_password">更改密码</string>
+    <string name="change_password_success">修改密码成功</string>
+    <string name="reset_password_success">重置密码成功</string>
+
+    <!-- gps page -->
+    <string name="tell_air_touch">设置</string>
+    <string name="cancel_fail">取消设置失败</string>
+    <string name="tell_fail">设置失败</string>
+    <string name="time_arrive_home">预约</string>
+
+    <!-- home page -->
+    <string name="temp_unit_c">°C</string>
+
+    <!--mobile-->
+    <string name="sending_sms">发送验证码中...</string>
+
+    <string name="verification_code">验证码</string>
+    <string name="sms_arrive">您将在一分钟之内收到短信。</string>
+    <string name="sms_code_wrong">验证码无效！</string>
+    <string name="sms_resend">重发</string>
+    <string name="reset_password">重置密码</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="sms_send_fail">短信发送失败</string>
+
+    <!--house-->
+
+    <string name="deleting_device">正在删除设备</string>
+
+    <!--tutorial-->
+
+    <!--emotion pager-->
+
+    <string name="pm25_str">PM2.5</string>
+
+    <!-- on travel reminder -->
+    <string name="version_title">发现新版本：%s</string>
+    <string name="update_now">更新</string>
+    <string name="remind_later">稍后</string>
+
+    <!-- group -->
+    <string name="group_control_device_mode_home">回家</string>
+    <string name="group_control_device_mode_away">出门</string>
+    <string name="group_control_device_mode_sleep">睡眠</string>
+    <string name="group_control_device_mode_awake">起床</string>
+    <string name="group_name_exist">该名称已经被使用，请输入一个不同组名</string>
+    <string name="updating_group_name">正在更新组名...</string>
+    <string name="group_master_not_delete">请先把该主设备移出该组，然后尝试删除操作。请注意，该操作会解散该组。</string>
+
+    <!-- all device -->
+    <string name="group">组</string>
+
+    <!--india -->
+
+    <string name="arrive_home_unsetted">设置您的预约时间，空气净化器将会提前净化空气以确保预约时间的空气质量是好的。</string>
+    <string name="arrive_home_settled">预约时间已设定，空气净化器将会提前净化空气以确保预约时间的空气质量是好的。</string>
+    <string name="arrive_home_all_device_offline">您的空气净化器设备已经离线，如果您的设备在预约时间到达前依然离线，预约将无法生效。</string>
+    <string name="setting_clock">正在设置...</string>
+    <string name="canceling_clock">正在取消...</string>
+
+    <string name="get_it">知道了</string>
+    <string name="arrive_time_in30min">设置到家时间不能短于30分钟，请重设。</string>
+
+    <!-- weather -->
+    <string name="weather_today">今天</string>
+    <string name="weather_recent">七天</string>
+    <string name="weather_aqi">空气质量指数</string>
+    <string name="weather_pm25">PM2.5</string>
+    <string name="weather_temperature">%1$d&#8211;%2$d°C</string>
+
+
+    <string name="scan_title">请将扫描框对准机器上的二维码</string>
+    <string name="no_data_device">未知设备</string>
+    <string name="no_support_smart_link">该设备为非联网设备，无法连接到手机端。</string>
+    <string name="connect_timeout_title1">连接超时</string>
+    <string name="connect_timeout_content">您可尝试如下操作或联系客服</string>
+    <string name="connect_timeout_content1">1. 可能您的密码输入错误，点击底部重试按钮重输密码。</string>
+    <string name="connect_timeout_content2">2. 请检查下图中蓝色按钮是否亮起，若未亮起请长按此按钮保持3秒直到听到一声提示音，然后点击重试按钮重新输入密码。</string>
+    <string name="connect_timeout_content3">4. 您也可以联系客服。</string>
+    <string name="connect_timeout_content4">"3. 该设备仅支持2.4GHz频段的Wi-Fi网络，请确认您的手机当前连接到的Wi-Fi为2.4GHz。"</string>
+    <string name="connect_timeout_retry">重试</string>
+    <string name="connect_timeout_contact">AP模式</string>
+    <string name="device_register_id">该设备已经在您的帐户下。是否要更新设备的Wi-Fi配置？</string>
+    <string name="device_update_wifi_success">已经成功为您更新设备Wi-Fi设置。</string>
+    <string name="samart_next_btn">下一步</string>
+    <string name="smartlink_inputpassword_str">请输入您的Wi-Fi密码然后点击下一步</string>
+
+    <string name="smartlink_password_str">请输入密码</string>
+    <string name="smart_permission_deny_messege">在系统隐私设置中允许H Plus访问您的相机来打开扫码功能。</string>
+    <string name="phone_call_permission_deny">在系统设置中允许H Plus访问电话服务以拨打电话。</string>
+    <string name="already_registed">您已经注册，请直接登录。</string>
+    <string name="login_password_invalid">登录失败！无效的手机号或密码。</string>
+    <string name="sms_hint">您将在一分钟之内收到短信。如有延时或者其他问题，请拨打客服电话，我们的工作时间为周一到周六9am-6pm。</string>
+    <string name="no_located_permission_scantxt">无法访问地理位置服务，在系统设置中允许H Plus访问定位服务以继续添加设备。</string>
+    <string name="gps_no_open">地理位置服务已关闭，在系统设置中打开定位服务以继续添加设备。</string>
+    <string name="go_to_setting">设置</string>
+
+    <string name="authorize_list">设备列表</string>
+    <string name="authorize_to_item">分享给</string>
+    <string name="authorize_select_item">选择角色</string>
+    <string name="authorize_confirm_item">确认</string>
+    <string name="authorize_to">分享给</string>
+    <string name="authorize_to_revoke_item">分享给</string>
+    <string name="authorize_add_phone">添加 %s 作为接收者</string>
+    <string name="authorize_invitation">分享邀请</string>
+    <string name="authorize_my_devices">我的设备</string>
+
+    <string name="authorize_invite_edit_hind">输入手机号码</string>
+    <string name="authorize_add_remind">%s 不是H Plus用户。请先让该联系人注册成为H Plus用户，然后重试。</string>
+    <string name="authorize_add_one_remind">您只能添加一个联系人。</string>
+
+    <string name="authorize_description">描述</string>
+    <string name="authorize_controler_remind">控制者不仅可以观看分享设备的运行状态，同时也可以执行远程控制。</string>
+    <string name="authorize_viewer_remind">观察者只能观看分享设备的运行状态。</string>
+    <string name="authorize_send_invitation">发送邀请</string>
+    <string name="authorize_send_invitation_successfully">邀请发送成功。</string>
+    <string name="authorize_send_revoke_successfully">已成功收回分享设备。</string>
+    <string name="authorize_send_remove_successfully">已成功移除设备。</string>
+    <string name="authorize_receive_invitation_role">角色</string>
+    <string name="authorize_send_remove_fail">移除设备失败，请重试。</string>
+    <string name="authorize_send_revoke_fail">收回授权失败，请重试。</string>
+    <string name="authorize_send_send_fail">发送失败，请重试。</string>
+    <string name="authorize_auth_detail">分享详情</string>
+
+    <string name="authorize_message_accept">接受</string>
+    <string name="authorize_message_decline">拒绝</string>
+    <string name="authorize_message_get">知道了</string>
+    <string name="authorize_message_send">发送时间</string>
+    <string name="authorize_message_expire">过期时间</string>
+    <string name="authorize_message_remind">设备分享邀请已过期</string>
+    <string name="authorize_message_remind_tips">该邀请已过期！</string>
+    <string name="authorize_remove_remind">确认把 “%s” 从您的账户中移除？</string>
+    <string name="authorize_revoke_remind">确认从 %2$s 处收回分享设备 “%1$s” ？</string>
+    <string name="authorize_add_version_remind">分享设备功能需要3.5.0或者更高的版本，请确保对方使用的版本符合要求，否则对方将无法接受邀请。</string>
+    <string name="authorize_message_revoke_time">收回时间:</string>
+    <string name="authorize_message_remove_time">移除时间:</string>
+    <string name="authorize_no_device">您还没有添加设备。</string>
+    <string name="authorize_message_from">来自:</string>
+    <string name="authorize_from">来自</string>
+
+    <string name="authorize_message_accept_time">接受时间:</string>
+    <string name="authorize_message_decline_time">拒绝时间:</string>
+    <string name="authorize_message_accept_by">接受人：</string>
+    <string name="authorize_message_decline_by">拒绝人：</string>
+    <string name="authorize_message_revoke_by">收回人：</string>
+    <string name="authorize_message_remove_by">移除人：</string>
+    <string name="authorize_decline_confirm">确认拒绝来自 %s 的邀请？</string>
+    <string name="authorize_decline_success">拒绝成功。</string>
+    <string name="authorize_accept_success">接受成功。</string>
+    <string name="authorize_message_authority">角色：</string>
+
+    <string name="authorize_send_invitation_place">位置</string>
+    <string name="footview_loading">加载中...</string>
+    <string name="authorize_send_invitation_role">角色</string>
+    <string name="authorize_message_place">位置：</string>
+    <string name="authorize_response_error">操作失败！ 请重试。</string>
+    <string name="authorize_authto_me_remind">您没有必要授权给自己。</string>
+    <string name="authorize_notification_from">来自 %s</string>
+    <string name="authorize_delete_confirm">您确定要删除该设备吗？如果您分享过该设备给其他用户，该操作会收回所有该设备的分享。这可能需要几分钟时间，请耐心等待。</string>
+    <string name="authorize_s">的设备</string>
+    <string name="authorize_enterprise_remind">不能授权给企业版用户！</string>
+    <string name="authorize_delete_message">删除消息</string>
+
+
+    <string name="sideitem_customer_care">联系客服</string>
+    <string name="push_notification_update">该推送消息需要更高的版本来处理。现在升级吗？</string>
+    <string name="push_notification_update_btn">更新</string>
+
+    <!-- Message Center -->
+    <string name="message_center_title">消息</string>
+    <string name="message_center_failed">加载更多消息失败！</string>
+    <string name="message_handle_refular_title">消息</string>
+
+    <!-- Smart Ro product-->
+    <string name="water_quality">水质</string>
+
+    <string name="smart_ro_water">水质</string>
+    <string name="emotion_water">水</string>
+    <string name="water_filter_no_permission">您当前没有权限查看滤芯信息。</string>
+
+    <string name="see_detail">查看详情</string>
+    <string name="device_deleted_already">该设备已被删除！</string>
+    <string name="downloading_new_version_str">正在下载更新，请等待。</string>
+
+    <!-- New Enrollment-->
+    <string name="enroll_scan_title">扫描二维码</string>
+    <string name="enroll_device_model_update">该设备需要更新的版本，请升级到最新版。</string>
+    <string name="enroll_device_model_error">获取设备支持信息失败！请重试。</string>
+    <string name="enroll_setting_btn">设置</string>
+    <string name="enroll_choice_title_content">点击图标，选择您已购买的设备。</string>
+    <string name="enroll_name">网络名称</string>
+    <string name="enroll_security">网络密码</string>
+    <string name="enroll_title_welcome">连接到设备Wi-Fi</string>
+    <string name="enroll_title_activie">激活设备Wi-Fi</string>
+    <string name="enroll_title_input_password">连接设备到互联网</string>
+    <string name="enroll_title_network_found">设备发现的网络</string>
+    <string name="enroll_choice_model_title">选择设备型号</string>
+    <string name="enroll_choice_title">选择设备</string>
+    <string name="enroll_commnunication_other_channel">在少部分手机上移动数据网络打开的情况下，可能会遇到添加设备失败的问题。请关闭您手机的移动数据网路（2G/3G/4G）然后尝试添加设备。</string>
+    <string name="connect_wifi_timeout">无法和设备通信！为了确保您的手机已经连上设备的Wi-Fi热点，请到系统Wi-Fi设置页选择设备SSID“ %1$s XXXXXX”。如果您找不到该热点名称，请尝试长按设备上的Wi-Fi按钮%2$s秒钟。</string>
+    <string name="enroll_btn_quite">退出</string>
+    <string name="enroll_btn_setting">设置</string>
+    <string name="enroll_exit">退出</string>
+    <string name="enroll_update">更新</string>
+    <string name="enroll_wifi_unavaiable">请先将您的手机连接到Wi-Fi然后回到APP。</string>
+    <string name="enroll_network_unavaiable">无法连接到网络！请先连接到互联网。</string>
+    <string name="offline_device_already_registered_authorize">您不能更新分享设备的Wi-Fi信息！</string>
+    <string name="eroll_device_update_wi_fi">该设备已经在您的帐户下。是否要更新设备的Wi-Fi配置？</string>
+
+
+    <!--New AllDevice and group control -->
+    <string name="all_device_bottom_selectall">全选</string>
+    <string name="all_device_bottom_deselectall">取消全选</string>
+    <string name="all_device_bottom_newgroup">新建组</string>
+    <string name="all_device_bottom_movein">移进</string>
+    <string name="all_device_bottom_delete">删除</string>
+    <string name="all_device_bottom_moveout">移出</string>
+    <string name="all_device_other">设备</string>
+    <string name="all_device_title_select">选择</string>
+    <string name="all_device_title_cancel">取消</string>
+    <string name="new_group_dialog_txt">给新建的组命名</string>
+    <string name="all_device_moveinto_confirm">确认将所选设备移进组“%s”?</string>
+    <string name="duplication_group_name">该组名已经存在！</string>
+    <string name="need_master_device_tip">您需要选中至少一台主设备（Air Touch-X， Air Touch-X2， Air Touch-X3）才能新建组。</string>
+    <string name="group_name_cannot_empty">请输入组名！</string>
+    <string name="select_a_group">选择一个组</string>
+    <string name="move_out_master_device">您选择的设备包含了该组的主设备，将主设备移出将会解散该组，确认移出所选设备吗？</string>
+    <string name="group_control_home">回家</string>
+    <string name="group_control_sleep">睡眠</string>
+    <string name="group_control_awake">起床</string>
+    <string name="group_control_away">出门</string>
+    <string name="move_out_to_group">确认将所选设备移出组“%1s”？</string>
+    <string name="group_control_part_fail">部分设备没有响应组控制！</string>
+    <string name="no_last_operation">无上次操作</string>
+    <string name="last_operation">上次操作</string>
+    <string name="group_control_na">未操作</string>
+    <string name="contact_customer_care">联系客服</string>
+    <!-- new Login in feature-->
+    <string name="account_country_text_str">国家</string>
+    <string name="account_phone_number_str">手机号码</string>
+    <string name="china_str">中国</string>
+    <string name="india_str">印度</string>
+    <string name="poily_text_str">点击“下一步”按钮，即代表您同意遵守霍尼韦尔的使用条款和隐私政策。</string>
+    <string name="user_not_exist">重设密码失败！输入用户“%s”不存在。</string>
+    <string name="update_password_error">重置密码失败！无效的密码。</string>
+    <string name="verification_code_hint">4位数验证码</string>
+    <string name="nickname_hint">最多9个字</string>
+    <string name="confirm_ps_hint">再次输入密码</string>
+
+
+    <!--India feature -->
+    <string name="enroll_qr_code">没有二维码？</string>
+
+
+    <string name="contact_info">联系方式</string>
+    <string name="verifiationv_str">验证</string>
+    <string name="user_account_password_hint">6-30个字符</string>
+    <string name="forgot_pw_btn">重置</string>
+    <string name="old_password_hint">输入当前密码</string>
+    <string name="change_password_confirm_pw_hint">再次输入新密码</string>
+    <string name="change_pw_btn">更改</string>
+    <string name="profile_title">个人资料</string>
+
+    <string name="login_new_user_text">注册</string>
+
+    <string name="not_register_user_tip">您还未注册，请先注册。</string>
+    <string name="is_verifying">验证中...</string>
+    <string name="enterprise_not_support_tip">不支持企业版账户密码重置！请联系客服。</string>
+    <string name="resetting_password">重置密码中...</string>
+    <string name="changing_password">更改密码中...</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="registering">注册中...</string>
+    <string name="live_room">客厅</string>
+
+    <!--new HomeManagement -->
+    <string name="home_manager_title">管理家</string>
+    <string name="home_manager_add">添加</string>
+    <string name="home_manager_add_home">添加家</string>
+    <string name="home_manager_set_default">设为默认</string>
+    <string name="home_manager_rename">重命名</string>
+    <string name="home_manager_delete">删除</string>
+    <string name="home_manager_input">输入新名字</string>
+    <string name="home_manager_delete_remind">确认删除“%s”？</string>
+    <string name="home_manager_input_city">输入城市名称</string>
+    <string name="home_manager_delete_home_fail">删除家失败！</string>
+    <string name="home_manager_add_home_fail">添加家失败！</string>
+    <string name="home_manager_edit_home_fail">编辑家失败！</string>
+    <string name="home_manager_delete_home_device_fail">出错啦！家里有设备，无法删除。请先删除家里所有设备，再重试。</string>
+    <string name="home_manager_delete_home_device_already">出错啦！未找到指定的家。</string>
+    <string name="home_manager_city_name">城市</string>
+    <string name="add_to_home">添加此家</string>
+    <string name="home_manager_no_data1">您还没有添加过任何家。</string>
+    <string name="home_manager_no_data2">点击下方按钮添加家。</string>
+
+    <!-- new device control -->
+    <string name="device_control_not_control">远程控制已禁用</string>
+    <string name="device_control_not_control_remind">该设备已经禁止了远程控制，您可以点击设备上的远程控制按钮来开启。</string>
+    <string name="device_control_device_error">设备异常</string>
+    <string name="device_control_offline">设备离线</string>
+    <string name="device_control_offline_remind_step1">1.设备的电源被断开。</string>
+    <string name="device_control_offline_remind_step2">2.您的Wi-Fi网络可能已被关闭。</string>
+    <string name="device_control_offline_remind_step3">3.您的设备可能不在Wi-Fi覆盖范围。</string>
+    <string name="device_control_offline_remind_step4">4.您的Wi-Fi网络密码可能已变更，为了使设备上线，您可以更新Wi-Fi信息。</string>
+    <string name="device_control_offline_error_title">设备离线之前监测到异常。</string>
+    <string name="device_control_filter_status">滤网使用情况</string>
+    <string name="device_control_auqa_filter_status">滤芯使用情况</string>
+    <string name="device_control_filter_empty">已用完，需要更换！</string>
+    <string name="device_control_prefilter_empty">需要清洗！</string>
+    <string name="device_control_unauth_filter">非认证滤网！</string>
+    <string name="device_control_filter_remain">剩余量</string>
+    <string name="device_control_product_name">产品名称：</string>
+    <string name="device_control_firmware_version">固件版本：</string>
+    <string name="device_control_power_off">电源关闭</string>
+    <string name="device_control_power">电源</string>
+    <string name="device_control_power_off_remind">设备关闭的情况下模式不可用，请点击电源按钮来开启设备。</string>
+    <string name="device_control_introduction">介绍</string>
+    <string name="device_control_user_nanual">用户手册</string>
+    <string name="device_control_user_eula">法律条款</string>
+    <string name="device_control_fan_speed">风速</string>
+    <string name="device_control_help">帮助</string>
+
+    <!-- dashboard string -->
+    <string name="dash_board_btn_text">概览</string>
+    <string name="devices_btn_text">设备</string>
+    <string name="messages_btn_text">消息</string>
+    <string name="me_btn_text">我</string>
+    <string name="home_ctrl_awake">起床</string>
+    <string name="dashboard_water_quality">水质</string>
+    <string name="all_device_worse">"室内环境不佳！"</string>
+    <string name="only_airtouch_worse">"室内空气质量不佳！"</string>
+    <string name="only_water_worse">"饮用水质不佳！"</string>
+    <string name="no_device_worse">"一切正常！"</string>
+    <string name="has_error_msg">"检测到设备异常！\n打开设备页来查看详细信息。"</string>
+    <string name="unsupport_device_top_msg_str">"检测到不支持的设备！\n打开设备页来查看详细信息。"</string>
+    <string name="unsupport_device_msg_str">"无可读数据！"</string>
+
+    <string name="authorization_home_ctrl_str">"分享的家不支持场景控制！"</string>
+    <string name="home_page_no_control_device">无可控制的设备！\n场景控制不可用。</string>
+    <string name="nodevice_top_text">当前家无设备！</string>
+    <string name="tap_add_device_msg">点击上方按钮添加设备。</string>
+    <string name="all_device_loading_failed">加载数据失败！</string>
+    <string name="all_device_loading">加载中，请稍等...</string>
+    <string name="no_message">您当前没有信息！</string>
+    <string name="authorization_deleted">该消息已不存在！</string>
+
+
+    <string name="clean_now_str">注意</string>
+
+    <!-- new Me-->
+    <string name="me_title">我</string>
+    <string name="me_profile">个人资料</string>
+    <string name="me_home_manager">管理家</string>
+    <string name="me_share_device">分享设备</string>
+    <string name="me_add_device">添加设备</string>
+    <string name="me_customer_care">联系客服</string>
+    <string name="me_about">关于</string>
+    <string name="me_user_name">用户名</string>
+    <string name="me_mobile_number">手机号码</string>
+    <string name="me_change_password">更改密码</string>
+    <string name="me_sign_out">退出登录</string>
+    <string name="me_comapany_info">公司信息</string>
+    <string name="me_copyright">版权</string>
+    <string name="me_version">版本</string>
+    <string name="me_signout_loading">正在退出登录...</string>
+    <string name="me_signout_fail">退出登录失败！</string>
+    <string name="me_user_id">账号</string>
+    <string name="me_new_features">新功能</string>
+
+    <!-- new Quick action -->
+    <string name="quick_action_no_action">没有需要您关注的设备。</string>
+    <string name="quick_action_attention_device">数据采集自设备\"%s\"。</string>
+    <string name="quick_action_pm25_title">PM2.5</string>
+    <string name="quick_action_tvoc_title">总挥发性有机物</string>
+    <string name="quick_action_device_list_title">需要您注意的设备：</string>
+
+    <!--weather-->
+    <string name="weathr_now">现在</string>
+    <string name="get_weathr_error">无法获取室外信息！</string>
+
+    <!-- new emotion -->
+    <string name="emotion_title_statist">统计</string>
+    <string name="emotion_title_yesterday">昨天</string>
+    <string name="emotion_title_week">本周</string>
+    <string name="emotion_title_month">本月</string>
+    <string name="emotion_title_far">目前为止</string>
+    <string name="emotion_title_air_title">空气净化器</string>
+    <string name="emotion_title_water_title">水净化器</string>
+    <string name="emotion_title_air_content">帮您收集了</string>
+    <string name="emotion_title_water_content">为您提供了</string>
+    <string name="emotion_particular_matters">可吸入颗粒物。</string>
+    <string name="emotion_pure_water">纯净水。</string>
+    <string name="emotion_mg">毫克</string>
+    <string name="emotion_g">克</string>
+    <string name="emotion_kg">千克</string>
+    <string name="emotion_l">升</string>
+    <string name="emotion_m">立方米</string>
+    <string name="emotion_km">千立方米</string>
+    <string name="emotion_air_ic">空气</string>
+    <string name="emotion_water_ic">水</string>
+    <string name="emotion_share_title">识别二维码来下载APP。</string>
+    <string name="emotion_share_logo_left">分享自Honeywell H Plus</string>
+    <string name="emotion_share_logo_right">&#160;H Plus</string>
+
+    <!-- home control-->
+    <string name="home_control_all_failed">所有设备都没有响应场景控制！</string>
+    <string name="home_control_part_failed">部分设备没有响应场景控制！</string>
+    <string name="home_control_timeout">场景控制失败！请重试。</string>
+    <string name="unsupport_update_msg">该设备需要比当前更新版本的应用才能支持。请升级。</string>
+    <string name="unsupport_update_btn">升级</string>
+
+    <string name="login_failed">登录失败</string>
+
+    <!-- tutorial page -->
+    <string name="tutorial_skip">跳过</string>
+    <string name="tutorial_start">开始体验</string>
+
+
+    <string name="enroll_socket_timeout">无法和设备通信！请拔掉电源重新插上，然后长按设备上的Wi-Fi按钮%1$s秒钟后重试。</string>
+
+    <!-- message Center-->
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新...</string>
+    <string name="message_clear">清理</string>
+    <string name="message_clear_all">全部清理</string>
+    <string name="message_clear_select_message">确定清理所选消息？</string>
+    <string name="message_clear_select_all_message">确定清理全部消息？</string>
+    <string name="message_clearing">正在清理...</string>
+    <string name="message_clear_fail">清理消息失败！</string>
+    <string name="message_check_device">查看设备详情</string>
+    <string name="message_check_time">时间</string>
+    <string name="message_remote_title">远程控制</string>
+    <string name="message_device_error">设备故障</string>
+    <string name="message_device_share">设备分享</string>
+    <string name="message_delete_fail">删除消息失败！</string>
+    <string name="message_acept_fail">接受邀请失败！</string>
+    <string name="message_decline_fail">拒绝邀请失败！</string>
+    <string name="message_new_version">该消息需要新版本的应用，请升级应用以加载消息详情。</string>
+    <string name="message_not_find_device">找不到该设备！可能该设备已经被删除。</string>
+    <string name="message_cache_loading_failed">加载数据失败</string>
+
+
+    <string name="network_off_msg">网络已关闭！请打开网络。</string>
+    <string name="network_error_msg">无法连接到服务器！</string>
+
+    <string name="cache_loading_failed">加载失败！</string>
+    <string name="no_content_yet">暂无内容。 </string>
+
+    <string name="new_place">新建位置</string>
+    <string name="existed_place">已有位置</string>
+
+    <string name="home_selected_ways_id">您想将设备放在哪个地方？您可以新建一个位置或选择一个已有的。</string>
+    <string name="create_home">正在创建位置</string>
+
+    <string name="name_device_msg">给您的设备取个名字，这样您可以用以和其他设备做区分。</string>
+    <string name="register_device_title_msg">注册设备</string>
+    <string name="register_device_center_msg">正在注册设备到您的账号，该操作可能需要一到两分钟，请耐心等待。</string>
+
+    <string name="enroll_finish">完成</string>
+    <string name="enroll_success_msg">设备已经添加成功！您现在可以去设备页查看设备信息了。</string>
+
+    <string name="enroll_failed_timeout">注册设备信息超时！您可以点击重试。如果持续失败，请联系客服以获取帮助。</string>
+    <string name="enroll_failed_register_by_other">注册设备时遇到问题，请联系客服。</string>
+    <string name="enroll_failed_commtask_failed">获取注册结果失败！您可能输入了错误的Wi-Fi密码，或者手机的网络连接不稳定。请自行查看设备是否已被成功添加，如果没有，请尝试重新添加设备。如果仍然失败，请联系客服。</string>
+    <string name="enroll_failed_other_failed">添加设备失败！您可以尝试重新添加设备。如果持续失败，请联系客服以获取帮助。</string>
+    <string name="enroll_failed_title">失败</string>
+    <string name="custom_care_string">联系客服</string>
+
+
+    <!-- enroll feature-->
+    <string name="enroll_device_info">设备信息</string>
+    <string name="enroll_product_name">产品名称：&#160;</string>
+    <string name="enroll_device_type">产品类型：&#160;</string>
+    <string name="enroll_device_model">型号：&#160;</string>
+    <string name="enroll_air_touch_device_type">空气净化器</string>
+    <string name="enroll_aqua_touch_device_type">水净化器</string>
+    <string name="enroll_enroll_now">开始添加</string>
+    <string name="enroll_smartlink_hear_time">请插上设备电源并确保设备已经开机。然后，长按设备上的Wi-Fi按钮3秒直到听到一声提示音。</string>
+    <string name="enroll_ap_hear_time">请插上设备电源并确保设备已经开机。然后，长按设备上的Wi-Fi按钮10秒直到听到两声提示音。</string>
+    <string name="enroll_connect_phone_to_device">为了和设备交换数据，您的手机需要连接到设备热点。</string>
+    <string name="enroll_wifi_on">开启</string>
+    <string name="enroll_wifi">WLAN</string>
+    <string name="enroll_wlan">WLAN</string>
+    <string name="ap_send_wifiinfo_error1">1. 您可以选择了一个错误的无线网络或输入了错误的密码。如果是这个原因，您可以点击重试按钮以重试。</string>
+    <string name="connect_wifi_msg">请连接您的手机到互联网。</string>
+    <string name="connect_wifi_msg2">您的手机已经连接到互联网，请点击下方按钮继续。</string>
+    <string name="quit_enroll_confirm_msg">您的手机可能仍然连接在设备无线热点上，您也许需要切换到之前的网络才能访问互联网。</string>
+    <string name="device_not_connect_phone">连接设备到服务器失败！请拔掉并重新插上电源然后重试。</string>
+    <string name="enroll_before_play_title">二维码位置</string>
+    <string name="enroll_before_play_content">您可以在如下位置找到二维码：</string>
+    <string name="enroll_before_play_step1">1. 机器上。</string>
+    <string name="enroll_before_play_step2">2. 外包装盒上。</string>
+    <string name="enroll_before_play_step3">3. 快速操作指南。</string>
+    <string name="connect_device_to_internet_tipmsg">我们将连接设备到和您手机连接的同一个Wi-Fi网络。</string>
+    <string name="send_wifiinfo_tipmsg">该操作可能需要一分钟，请稍候。</string>
+    <string name="network_found_by_device_title_content">如下列表包含了设备扫描到的支持的无线网络，请选择其中一个进行连接。</string>
+    <string name="connect_device_to_device_title_content">设备将被连接到该网络。</string>
+    <string name="enroll_invalid_qr_code">无效二维码。</string>
+    <string name="enroll_connection_timeout">检查互联网连接</string>
+
+    <string name="device_wifi_off">您可能选择了错误的设备或者设备的无线热点已经关闭，请重试。</string>
+    <string name="where_to_putdevice">设备放在哪？</string>
+
+    <string name="new_place_failed">新建位置失败！</string>
+    <string name="connecting_failed_title"> 连接失败</string>
+
+    <string name="spannable_string_3">一</string>
+    <string name="spannable_string_4">两</string>
+
+    <!-- try demo-->
+    <string name="tutorial_one_title">曲线和柱状图</string>
+    <string name="tutorial_one_content">现在您可以查看历史数据的统计包括空气净化器、水净化器的相关曲线和柱状图。</string>
+    <string name="me_try_demo">现在试用</string>
+    <string name="start_sign_up">用户注册</string>
+    <string name="start_sign_in">已有账号？请登录。</string>
+    <string name="start_login_try">免登录试用。</string>
+    <string name="spannable_string_try">试用</string>
+    <string name="spannable_string_sign_in">登录</string>
+
+
+    <string name="try_demo_airtouch_name">空气净化器</string>
+    <string name="try_demo_water_name">水净化器</string>
+    <string name="try_demo_alldevice_title">虚拟设备</string>
+
+    <string name="try_demo_feedback_title">反馈建议</string>
+    <string name="try_demo_feedback_content">请给出您的建议：</string>
+    <string name="try_demo_feedback_edit_hint">写下您想反馈的内容。</string>
+    <string name="try_demo_feedback_attach_photo">附上图片（非必需）</string>
+    <string name="try_demo_feedback_submit">提交</string>
+    <string name="try_demo_feedback_take_photo">拍照</string>
+    <string name="try_demo_feedback_choose_photo">选择照片</string>
+    <string name="try_demo_feedback_submited">反馈已发送！</string>
+    <string name="feedback_camera_permission">请打开相机权限！</string>
+    <string name="feedback_storage_permission">请打开本地存储读取权限！</string>
+    <string name="try_demo_entrance">您即将试用虚拟设备，请注意虚拟设备仅作展示及体验用途，某些功能和实际环境的使用可能稍有差别。</string>
+    <string name="try_demo_feedback_device_related">设备相关问题?</string>
+    <string name="try_demo_feedback_select_device">请选择设备</string>
+
+    <!-- MadAir Enrollment -->
+    <string name="mad_air_enroll_turn_on_device_title">打开设备电源</string>
+    <string name="mad_air_enroll_turn_on_device_desc">按住电源按钮直到电源灯闪烁。</string>
+    <string name="mad_air_enroll_turn_on_bluetooth_title">打开蓝牙</string>
+    <string name="mad_air_enroll_turn_on_bluetooth_desc">请打开手机蓝牙来扫描可用设备。</string>
+    <string name="mad_air_enroll_manual_select_title">设备配对</string>
+    <string name="mad_air_enroll_manual_select_desc">请选择一个设备。</string>
+    <string name="mad_air_enroll_manual_select_pair">配对</string>
+    <string name="mad_air_enroll_manual_select_pairing">正在配对</string>
+    <string name="mad_air_enroll_name_device_title">给设备取个名字</string>
+    <string name="mad_air_enroll_name_device_desc">给你的设备取个名字以便区分其他设备。</string>
+    <string name="mad_air_enroll_name_device_hint">我要风</string>
+    <string name="mad_air_enroll_pair_fail_title">未发现设备</string>
+    <string name="mad_air_enroll_pair_fail_desc">未能找到设备！请尝试以下步骤并重试。</string>
+    <string name="mad_air_enroll_pair_fail_detail">1. 确保您的设备已经开启。如果没有，请长按电源键直到听到一声提示音并且电源灯闪烁。\n\n2. 将设备靠近手机。</string>
+    <string name="mad_air_enroll_device_type">口罩</string>
+    <string name="mad_ari_enrolled_already">该设备已经被你添加过！</string>
+    <string name="mad_air_enroll_setting">设置</string>
+    <string name="mad_air_enroll_same_name">该设备名称已存在！</string>
+    <string name="mad_air_enroll_not_support">该设备需要Android 4.3或以上版本才能支持。</string>
+
+    <!-- MadAir Dashboard -->
+    <string name="mad_air_dashboard_breath_unit">次/分</string>
+    <string name="mad_air_dashboard_breath_current">当前呼吸频率</string>
+    <string name="mad_air_dashboard_speed_title">风量调节</string>
+    <string name="mad_air_dashboard_speed_auto">自动</string>
+    <string name="mad_air_dashboard_speed_low">微风</string>
+    <string name="mad_air_dashboard_speed_medium">大风</string>
+    <string name="mad_air_dashboard_speed_high">狂风</string>
+    <string name="mad_air_dashboard_status_connected">已连接</string>
+    <string name="mad_air_dashboard_status_using">使用中</string>
+    <string name="mad_air_dashboard_status_disconnect">已断开</string>
+    <string name="mad_air_dashboard_percent_unit">%</string>
+    <string name="mad_air_dashboard_battery">剩余电量</string>
+    <string name="mad_air_dashboard_battery_charge">请给口罩充电</string>
+    <string name="mad_air_dashboard_filter">剩余滤芯</string>
+    <string name="mad_air_dashboard_filter_buy">购买新滤芯</string>
+    <string name="mad_air_dashboard_filter_install">请安装滤芯</string>
+    <string name="mad_air_dashboard_no_data">---</string>
+    <string name="mad_air_dashboard_open_bluetooth">请打开手机蓝牙。</string>
+    <string name="mad_air_dashboard_open_mask">打开口罩电源并靠近。</string>
+    <string name="mad_air_dashboard_filtered_particulars">阻挡颗粒物</string>
+    <string name="mad_air_dashboard_filtered_total">总量</string>
+    <string name="mad_air_dashboard_freq_calculating">正在计算…</string>
+    <plurals name="mad_air_dashboard_battery_remain_hour">
+        <item quantity="other">可使用约%s小时</item>
+    </plurals>
+    <plurals name="mad_air_dashboard_battery_remain_min">
+        <item quantity="other">可使用约%s分钟</item>
+    </plurals>
+    <plurals name="mad_air_dashboard_filter_remain_hour">
+        <item quantity="other">可使用约%s小时</item>
+    </plurals>
+    <string name="mad_air_dashboard_default_unit">微克</string>
+    <string name="mad_air_dashboard_g_unit">毫克</string>
+    <string name="mad_air_dashboard_kg_unit">克</string>
+    <string name="mad_air_dashboard_kgg_unit">千克</string>
+
+    <!-- MadAir AllDevice -->
+    <string name="mad_air_dashboard_need_mask">请佩戴口罩</string>
+    <string name="mad_air_dashboard_wear_mask">建议佩戴口罩</string>
+    <string name="mad_air_filter_status">滤芯状态</string>
+    <string name="location_city">城市</string>
+    <string name="location_selected_city">已选城市</string>
+    <string name="location_selected_city_hint">请输入城市名</string>
+    <string name="location_auto_locating">自动定位</string>
+    <string name="location_locating">正在定位</string>
+    <string name="location_locating_fail">定位失败！</string>
+    <string name="mad_air_mask">口罩</string>
+    <string name="location_locating_manual_remind">您所在城市的PM2.5值会被用来计算口罩设备阻挡的颗粒物，更改城市可能产生错误的计算结果，请确保您选择了正确的城市。</string>
+    <string name="add_location">添加城市</string>
+    <string name="mad_air_locating_fail">定位失败！点击下方按钮来添加城市。</string>
+    <string name="mad_air_delete">删除该设备会从您的手机上移除所有该设备的数据，请确定是否继续删除。</string>
+    <!-- MadAir Integration -->
+
+    <!-- update version-->
+    <string name="check_version_update_now">更新</string>
+    <string name="check_version_new_version">新版本</string>
+
+    <string name="try_demo_madair_name">智能口罩</string>
+    <string name="try_demo_top_tip">点击此处退出使用模式</string>
+    <string name="storage_permission">在系统设置中允许H Plus访问存储权限。</string>
+
+    <!-- new Emotion-->
+    <string name="emotion_title_air">空气</string>
+    <string name="emotion_title_water">水</string>
+    <string name="emotion_indoor_air">设备均值</string>
+    <string name="emotion_outdoor_air">城市均值</string>
+    <string name="emotion_indoor_water">自来水</string>
+    <string name="emotion_outdoor_water">过滤水</string>
+    <string name="emotion_indoor_air_worse">如果室内空气比室外差，原因可能是新装潢、吸烟、或者滤网过期等。</string>
+    <string name="emotion_indoor_water_worse">如果过滤水比原水还差，原因可能是过滤的滤芯或设备内水管水垢积淀。</string>
+    <string name="emotion_data_break_point_air">设备离线将会造成数据不连续，请保持设备在线以查看连续数据。</string>
+    <string name="emotion_data_break_point_water">设备离线将造成自来水数据不连续，一天内未用水会造成过滤水数据不连续。</string>
+    <string name="emotion_line_chart_title_water">TDS（总溶解固体）</string>
+    <string name="water_default_unit">升</string>
+    <string name="water_m_unit">立方米</string>
+    <string name="water_filtered_particulars">净化水量</string>
+    <string name="emotion_air_unit">微克／立方米</string>
+    <string name="confirm_filter_status">请确保已安装滤芯并且佩戴贴合。</string>
+    <string name="emotion_water_total_message">净化水量为与您账户关联的霍尼韦尔净水器测出的水流量。此总量为您帐户关联的所有霍尼韦尔净水器自添加以来净化水量的总和。</string>
+    <string name="emotion_air_device_average_message">PM2.5设备均值为所有与您账户关联的霍尼韦尔空气净化器在当天检测出的PM2.5数据的平均值。</string>
+    <string name="emotion_air_city_average_message">PM2.5城市均值为您所在城市当天PM2.5数据的平均值，由第三方数据供应商“心知天气”提供。</string>
+    <string name="emotion_air_total_message">阻挡颗粒物量是根据与您账户关联的霍尼韦尔空气净化器检测出的PM2.5数据、风量和开机时间等参数综合计算出的模拟数据，并非阻挡颗粒物的实际重量。此总量为您账户关联的所有霍尼韦尔空气净化器自添加以来阻挡颗粒物量历史数据的总和。</string>
+    <string name="emotion_air_approx">约</string>
+</resources>

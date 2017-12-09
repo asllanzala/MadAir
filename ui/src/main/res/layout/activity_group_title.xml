@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auth_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/action_bar_bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/actionbar_tile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/total_tile_id"
+        android:layout_below="@+id/actionbar_tile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <FrameLayout
+            android:id="@+id/enroll_back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:onClick="doClick">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/back_icon" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/group_title_edit_id"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edit_text_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLength="14"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/message_title_text_id"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/emotion_share_right_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/all_device_select_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dip"
+                android:src="@drawable/device_edit"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/end_text_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="doClick"
+                android:padding="10dip"
+                android:text="@string/cancel"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_below="@id/total_tile_id"
+        android:src="@drawable/title_bar_white_shadow"/>
+
+    <com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout
+        android:id="@+id/network_error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/total_tile_id">
+
+    </com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout>
+
+</RelativeLayout>

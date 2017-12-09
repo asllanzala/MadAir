@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enrollment_bg">
+
+    <include
+        android:id="@+id/auth_back_img_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <com.honeywell.hch.airtouch.ui.authorize.ui.view.AuthorizeNotificationView
+        android:id="@+id/auth_request_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/auth_back_img_title_id"
+        android:onClick="doClick"
+        android:visibility="visible">
+
+    </com.honeywell.hch.airtouch.ui.authorize.ui.view.AuthorizeNotificationView>
+
+    <TextView
+        android:id="@+id/auth_no_device_tv"
+        style="@style/enroll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="50dp"
+        android:text="@string/authorize_no_device"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@+id/auth_request_elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/auth_request_info_layout"
+        android:divider="@null"
+        android:fastScrollEnabled="false"
+        android:groupIndicator="@null"
+        android:listSelector="@color/setting_bg"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+    </ExpandableListView>
+</RelativeLayout>

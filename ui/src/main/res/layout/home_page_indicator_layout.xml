@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+
+    <RelativeLayout
+        android:id="@+id/actionbar_tile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/home_name_layout"
+        style="@style/left_padding"
+        android:layout_below="@id/actionbar_tile_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/drop_icon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/drop_down_arrow_small" />
+
+
+            <ImageView
+                android:id="@+id/default_auth_image_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_home_blue" />
+
+            <TextView
+                android:id="@+id/home_name_id"
+                style="@style/bold_white_15sp"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="My home" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_right_layout"
+        style="@style/right_margin"
+        android:layout_below="@id/actionbar_tile_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/loading_success_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/weather_icon_id"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/temperature_id"
+                style="@style/alldevice_bottom_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip" />
+
+            <TextView
+                android:id="@+id/city_name"
+                style="@style/alldevice_bottom_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip" />
+
+        </LinearLayout>
+        
+       <LinearLayout
+           android:id="@+id/loading_cache_id"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:id="@+id/loading_img"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:src="@drawable/dashboard_cache_loading" />
+
+           <TextView
+               android:id="@+id/cache_loading_msg_id"
+               android:layout_marginLeft="11dip"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:text="last update:10 mins ago"
+               style="@style/white_11sp"/>
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edit_text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:singleLine="true"
+        android:paddingLeft="15dip"
+        style="@style/enroll_text"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/edit_text_selector"
+        android:hint="@string/smartlink_password_str"/>
+
+    <ImageView
+        android:id="@+id/edit_icon_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eye_off"
+        android:paddingRight="10dip"
+        android:paddingEnd="10dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

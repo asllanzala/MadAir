@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enrollment_bg">
+
+
+    <include
+        android:id="@+id/enroll_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <ListView
+        android:id="@+id/enroll_model_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/confirmBtn"
+        android:layout_below="@id/enroll_title_id"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

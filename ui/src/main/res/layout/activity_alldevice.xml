@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background"
+    android:orientation="horizontal">
+
+
+    <ScrollView
+        android:id="@+id/aqua_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/this_bottom_layout_id"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/group_control_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView
+                android:id="@+id/all_device_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/this_bottom_layout_id"
+                android:divider="@null"></com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.honeywell.hch.airtouch.ui.common.ui.view.BottomView
+        android:id="@+id/this_bottom_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"></com.honeywell.hch.airtouch.ui.common.ui.view.BottomView>
+
+    <RelativeLayout
+        android:id="@+id/no_device_layout"
+        android:visibility="gone"
+        style="@style/left_right_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/add_gray_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ds_top_no_device"/>
+
+
+            <TextView
+                android:id="@+id/loading_text_id"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_gray_icon"
+                android:layout_marginTop="20dip"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tap_add_device_msg" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

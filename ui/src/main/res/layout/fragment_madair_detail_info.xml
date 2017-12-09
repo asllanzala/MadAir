@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background"
+    android:orientation="horizontal">
+
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/activity_group_title" />
+
+    <ScrollView
+        android:id="@+id/aqua_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_id"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/fragment_mad_air_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <RelativeLayout
+                android:id="@+id/aqua_quality_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mad_air_device_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="20dp"
+                     />
+
+                <ImageView
+                    style="@style/separateline_long"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" />
+
+
+            </RelativeLayout>
+
+
+            <com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView
+                android:id="@+id/device_filter_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null"></com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/device_control_power_off_tv"
+        style="@style/device_control_button_item"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/switch_tab_root_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_switch_tab_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/emotion_tab_one_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="10dip">
+
+            <TextView
+                android:id="@+id/emotion_one_tv"
+                style="@style/white_13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emotion_title_air"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emotion_tab_two_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:visibility="gone"
+            android:saveEnabled="false">
+
+            <TextView
+                android:id="@+id/emotion_two_tv"
+                style="@style/blue_13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emotion_title_water"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:background="@color/emotion_sperate_line" />
+
+        <ImageView
+            android:id="@+id/id_tab_line_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="2.5dp"
+            android:background="@color/emotion_tab_line"
+            android:contentDescription="tab"></ImageView>
+    </RelativeLayout>
+
+
+</LinearLayout>

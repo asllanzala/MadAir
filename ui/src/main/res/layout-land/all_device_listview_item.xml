@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@drawable/all_device_item_back"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/all_device_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:button="@drawable/all_device_checkbox_selector"
+        android:visibility="visible" />
+
+
+    <RelativeLayout
+        android:id="@+id/all_device_device_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/all_device_check_box">
+
+        <ImageView
+            android:id="@+id/filter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/all_device_name_rl"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/filter_icon">
+
+            <TextView
+                android:id="@+id/all_device_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air Touch S"
+                android:textColor="@color/text_common"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/all_device_status_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_device_name_tv"
+                android:layout_marginTop="6dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/water_home" />
+
+            <TextView
+                android:id="@+id/all_device_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_device_name_tv"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/text_common"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/all_device_status_iv"
+                 />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/unknow_device_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            style="@style/oragle_13_bold"
+            android:layout_toRightOf="@id/filter_icon"
+            android:text="@string/all_device_unsupport_device"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/all_device_value_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/all_device_item_expand_iv"
+        android:layout_toRightOf="@+id/all_device_device_rl">
+
+        <RelativeLayout
+            android:id="@+id/all_device_first_value_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1">
+
+            <com.honeywell.hch.airtouch.ui.common.ui.view.CustomFontTextView
+                android:id="@+id/all_device_first_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="20"
+                app:textboldCustom="true"
+                android:textColor="@color/auth_cancel_text_color"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/all_device_first_hint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_device_first_value_tv"
+                android:layout_centerHorizontal="true"
+                android:text="PM 2.5"
+                android:textColor="@color/text_common"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/all_device_second_value_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/all_device_first_value_rl"
+            android:layout_weight="1">
+
+            <com.honeywell.hch.airtouch.ui.common.ui.view.CustomFontTextView
+                android:id="@+id/all_device_second_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Good"
+                app:textboldCustom="true"
+                android:textColor="@color/auth_cancel_text_color"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/all_device_second_hint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_device_second_value_tv"
+                android:layout_centerHorizontal="true"
+                android:text="TVOC"
+                android:textColor="@color/text_common"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/all_device_item_expand_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/all_device_item_expand" />
+</RelativeLayout>

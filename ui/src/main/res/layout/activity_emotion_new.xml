@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emotion_title_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/total_tile_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/actionbar_tile_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/actionbar_tile_bg">
+
+            <FrameLayout
+                android:id="@+id/enroll_back_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/back_icon_white" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="@string/emotion_title_statist"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/emotion_share_right_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/all_device_select_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/emotion_share" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout
+        android:id="@+id/network_error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_tile_id"></com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout>
+
+    <LinearLayout
+        android:id="@+id/emotion_share_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/emotion_top_tab_new" />
+
+        <com.honeywell.hch.airtouch.ui.emotion.ui.view.NoScrollViewPager
+            android:id="@+id/emotion_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></com.honeywell.hch.airtouch.ui.emotion.ui.view.NoScrollViewPager>
+
+    </LinearLayout>
+</LinearLayout>

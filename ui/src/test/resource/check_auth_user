@@ -1,0 +1,12 @@
+
+  [
+      {
+          "PhoneNumber": "13820372597",
+          "IsHplusUser": true
+      },
+      {
+          "PhoneNumber": "13820372598",
+          "IsHplusUser": false
+      }
+  ]
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/auth_add_high_light_color"
+    android:orientation="horizontal">
+
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <ScrollView
+        android:id="@+id/quick_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_id"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/quick_action_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/quick_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/quick_action_rotatin_back">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <com.honeywell.hch.airtouch.ui.common.ui.view.CustomFontTextView
+                        android:id="@+id/quick_action_value_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="150"
+                        android:textSize="50dp" />
+
+                    <TextView
+                        android:id="@+id/quick_action_desc_tv"
+                        style="@style/enroll_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quick_action_value_tv"
+                        android:layout_centerHorizontal="true"
+                        android:text="Terrible" />
+
+                    <TextView
+                        android:id="@+id/quick_action_indicator_tv"
+                        style="@style/enroll_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quick_action_desc_tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:text="PM2.5" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/quick_action_device_name"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp" />
+
+            <ImageView
+                style="@style/separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quick_action_no_attention"
+                style="@style/enroll_big_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:text="@string/quick_action_no_action"
+                android:visibility="gone" />
+
+            <com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView
+                android:id="@+id/device_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/this_bottom_layout_id"
+                android:divider="@null"></com.honeywell.hch.airtouch.ui.common.ui.view.GroupContolListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

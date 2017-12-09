@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enrollment_bg">
+
+    <include
+        android:id="@+id/add_location_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <RelativeLayout
+        android:id="@+id/add_location_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_location_title_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/search_place_tv"
+            style="@style/enroll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/home_manager_city_name" />
+
+
+        <com.honeywell.hch.airtouch.ui.common.ui.view.HPlusEditText
+            android:id="@+id/search_place_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_place_tv"
+            android:layout_marginTop="15dp"
+            android:maxLength="14"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/name_place_tv"
+            style="@style/enroll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_place_et"
+            android:layout_marginTop="25dp"
+            android:text="@string/name_place" />
+
+        <com.honeywell.hch.airtouch.ui.common.ui.view.HPlusEditText
+            android:id="@+id/name_place_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_place_tv"
+            android:layout_marginTop="15dp"
+            android:maxLength="14"
+            android:singleLine="true" />
+
+        <ListView
+            android:id="@+id/home_city_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_place_et"
+            android:background="@drawable/add_home_listview_shape"
+            android:divider="@color/group_edit_text"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@color/transparent"></ListView>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/add_home_button_confirm"
+        style="@style/blue_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="doClick"
+        android:text="@string/add_to_home"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

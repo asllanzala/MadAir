@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background"
+    android:baselineAligned="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/enroll_title_id"
+        layout="@layout/activity_enroll_title" />
+
+
+
+    <com.honeywell.hch.airtouch.ui.enroll.ui.view.EnrollLoadingButton
+        android:id="@+id/setting_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" />
+
+</RelativeLayout>

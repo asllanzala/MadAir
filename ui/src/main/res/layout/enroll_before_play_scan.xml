@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mo_scanner_deny_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/mo_scanner_preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <include
+            android:id="@+id/enroll_title_id"
+            layout="@layout/activity_smart_scan_enroll_title" />
+
+        <com.honeywell.hch.airtouch.ui.Zxing.view.ViewfinderView
+            android:id="@+id/mo_scanner_viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--<ViewWhiteBackGround-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <RelativeLayout
+            android:id="@+id/deny_scanner_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/enroll_title_id"
+                layout="@layout/activity_enroll_title" />
+
+            <ImageView
+                android:id="@+id/deny_scanner_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/no_access_camera" />
+
+            <com.honeywell.hch.airtouch.ui.common.ui.view.CenterTextView
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deny_scanner_iv"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:lineSpacingExtra="6.5dp"
+                android:lineSpacingMultiplier="1"
+                android:text="@string/smart_permission_deny_messege" />
+
+            <Button
+                android:id="@+id/enroll_choose_nextBtn"
+                style="@style/blue_buton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:onClick="doClick"
+                android:text="@string/go_to_setting" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ap_mode_entrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:text="@string/enroll_qr_code"
+        android:textColor="@color/enroll_blue2"
+        android:textSize="16sp" />
+</RelativeLayout>

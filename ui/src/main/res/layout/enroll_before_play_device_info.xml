@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background"
+    android:gravity="center_horizontal">
+
+    <include
+        android:id="@+id/enroll_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <LinearLayout
+        android:id="@+id/enroll_device_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enroll_title_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enroll_product_name" />
+
+            <TextView
+                android:id="@+id/enroll_device_product_name_tv"
+                style="@style/enroll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enroll_device_type" />
+
+            <TextView
+                android:id="@+id/enroll_device_type_tv"
+                style="@style/enroll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/enroll_device_model_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enroll_device_model" />
+
+            <TextView
+                android:id="@+id/enroll_device_model_tv"
+                style="@style/enroll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/enroll_device_iv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/enroll_device_btn"
+        android:layout_below="@+id/enroll_device_ll"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/enroll_device_btn"
+        style="@style/blue_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="doClick"
+        android:text="@string/enroll_enroll_now" />
+
+</RelativeLayout>

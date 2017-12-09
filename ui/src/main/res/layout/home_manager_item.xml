@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_manager_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_manager_item_back">
+
+        <RelativeLayout
+            android:id="@+id/auth_children_device_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/honme_manager_icon_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/home_manager_location_tv"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/home_manager_shared_to_me" />
+
+            <TextView
+                android:id="@+id/home_manager_home_tv"
+                style="@style/enroll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/honme_manager_icon_iv"
+                android:text="flsflsf" />
+
+            <TextView
+                android:id="@+id/home_manager_location_tv"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/home_manager_home_tv"
+                android:layout_below="@+id/home_manager_home_tv"
+                android:text="2323" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/home_manager_expand_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/home_manager_expand_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_manager_expand_back"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/default_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/home_manager_text_item"
+                android:drawableTop="@drawable/set_default"
+                android:text="@string/home_manager_set_default" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rename_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/home_manager_text_item"
+                android:drawableTop="@drawable/rename"
+                android:text="@string/home_manager_rename" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/home_manager_text_item"
+                android:drawableTop="@drawable/delete_home"
+                android:text="@string/home_manager_delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

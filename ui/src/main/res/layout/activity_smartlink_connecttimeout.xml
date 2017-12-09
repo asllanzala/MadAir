@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background"
+    android:baselineAligned="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/enroll_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <ScrollView
+        android:id="@+id/scroll_id"
+        android:layout_width="match_parent"
+        android:layout_height="450dip"
+        android:layout_below="@id/enroll_title_id"
+        android:layout_marginEnd="15dip"
+        android:layout_marginRight="15dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_id"
+                style="@style/enroll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dp"
+                android:text="@string/connect_timeout_title1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_content1_id"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginStart="15dip"
+                android:layout_marginTop="20dip"
+                android:lineSpacingExtra="6.5dp"
+                android:lineSpacingMultiplier="1"
+                android:text="@string/connect_timeout_content" />
+
+            <RelativeLayout
+                android:id="@+id/content_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_content1_id"
+                android:layout_marginLeft="15dip"
+                android:layout_marginStart="15dip"
+                android:layout_marginTop="13dip">
+
+                <TextView
+                    android:id="@+id/content1_id"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="6.5dp"
+                    android:lineSpacingMultiplier="1"
+                    android:text="@string/connect_timeout_content1" />
+
+                <TextView
+                    android:id="@+id/content2_id"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content1_id"
+                    android:layout_marginTop="13dip"
+                    android:lineSpacingExtra="6.5dp"
+                    android:lineSpacingMultiplier="1"
+                    android:text="@string/connect_timeout_content2" />
+
+                <ImageView
+                    android:id="@+id/image_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content2_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="13dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/contol_panel" />
+
+                <TextView
+                    android:id="@+id/content4"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image_id"
+                    android:layout_marginTop="13dip"
+                    android:lineSpacingExtra="6.5dp"
+                    android:text="@string/connect_timeout_content4" />
+
+                <TextView
+                    android:id="@+id/content3_1"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content4"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="13dip"
+                    android:text="@string/connect_timeout_content3" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/retrybtn_id"
+                style="@style/enroll_two_buton_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/connect_timeout_retry" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/contactbtn_id"
+                style="@style/enroll_two_buton_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/connect_timeout_contact"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

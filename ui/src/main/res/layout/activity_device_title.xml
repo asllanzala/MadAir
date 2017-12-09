@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/action_bar_bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/actionbar_tile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/total_tile_id"
+        android:layout_below="@+id/actionbar_tile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <include
+            android:id="@+id/left_title"
+            layout="@layout/home_left_select_title" />
+
+
+        <LinearLayout
+            android:id="@+id/loading_success_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/all_device_add_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/add_device" />
+
+            <RelativeLayout
+                android:id="@+id/right_edit"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/all_device_select_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/device_edit" />
+
+                <TextView
+                    android:id="@+id/end_text_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/loading_cache_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            style="@style/right_margin"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <include layout="@layout/cache_loading_layout" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_below="@id/total_tile_id"
+        android:src="@drawable/title_bar_white_shadow"/>
+
+    <com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout
+        android:id="@+id/network_error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/total_tile_id">
+    </com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout>
+
+</RelativeLayout>

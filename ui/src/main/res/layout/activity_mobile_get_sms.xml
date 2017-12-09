@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:drop="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background">
+
+    <ScrollView
+        android:layout_below="@id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttom_btn_id"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <include
+                android:id="@+id/top_layout_id"
+                layout="@layout/user_account_topview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/middler_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout_id"
+                android:layout_marginEnd="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginStart="20dip">
+
+                <TextView
+                    android:id="@+id/contry_str"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="@string/account_country_text_str" />
+
+                <com.honeywell.hch.airtouch.ui.common.ui.view.DropEditText
+                    android:id="@+id/country_drop_edittext_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contry_str"
+                    android:maxLength="14"
+                    drop:dropMode="flow_parent"></com.honeywell.hch.airtouch.ui.common.ui.view.DropEditText>
+
+
+                <TextView
+                    android:id="@+id/phone_number_str"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/country_drop_edittext_id"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/account_phone_number_str" />
+
+                <com.honeywell.hch.airtouch.ui.common.ui.view.HPlusEditText
+                    android:id="@+id/phone_number_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phone_number_str"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="14"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/polity_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/phone_number_txt"
+                    android:layout_below="@+id/phone_number_txt"
+                    android:layout_marginTop="30dip"
+                    style="@style/tip_message_text"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="@string/poily_text_str"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/verify_code_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phone_number_txt"
+                    android:layout_marginTop="30dp"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/verify_sms_text_id"
+                        style="@style/enroll_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="@string/verification_code" />
+
+                    <com.honeywell.hch.airtouch.ui.common.ui.view.HPlusEditText
+                        android:id="@+id/verify_code_edit_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/verify_sms_text_id"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:maxLength="10"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/send_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/verify_code_edit_id"
+                        android:layout_marginTop="25dip"
+                        android:text="60"
+                        android:textSize="17sp"
+                        android:textColor="@color/login_new_user_color"/>
+
+                    <TextView
+                        android:id="@+id/send_code_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/send_time_text"
+                        android:text="@string/sms_arrive"
+                        android:lineSpacingMultiplier="1.5"
+                        android:layout_marginTop="25dip"
+                        style="@style/tip_message_text"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/activity_enroll_title" />
+
+
+    <Button
+        android:id="@+id/buttom_btn_id"
+        style="@style/blue_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/enroll_next"
+        android:layout_marginTop="10dip"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

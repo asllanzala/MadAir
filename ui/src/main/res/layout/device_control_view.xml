@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/device_header_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/device_control_fan_header_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/device_control_oval">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/device_control_fanspeed_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/device_fanspeed" />
+
+            <TextView
+                android:id="@+id/device_control_fanspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/device_control_fanspeed_iv"
+                android:layout_centerInParent="true"
+                android:paddingTop="8dp"
+                android:text="@string/device_control_fan_speed"
+                android:textColor="@color/text_common"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/device_control_fanspeed_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/device_control_fanspeed"
+                android:layout_centerInParent="true"
+                android:paddingTop="16dp"
+                android:text="8"
+                android:textColor="@color/auth_cancel_text_color"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.honeywell.hch.airtouch.ui.control.ui.device.view.AirTouchLedView
+        android:id="@+id/device_control_panel_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/device_control_button_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_control_fan_header_rl"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/device_control_power_tv"
+            style="@style/device_control_button_item"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/device_poweron_btn"
+            android:onClick="doClick"
+            android:textColor="@color/auth_cancel_text_color"
+            android:text="@string/device_control_power" />
+
+        <TextView
+            android:id="@+id/device_control_sleep_tv"
+            style="@style/device_control_button_item"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/device_sleepoff_btn"
+            android:onClick="doClick"
+            android:text="@string/control_sleep"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/device_control_auto_tv"
+            style="@style/device_control_button_item"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/device_autooff_btn"
+            android:onClick="doClick"
+            android:text="@string/control_auto" />
+
+        <TextView
+            android:id="@+id/device_control_fast_tv"
+            style="@style/device_control_button_item"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/device_fastoff_btn"
+            android:onClick="doClick"
+            android:text="@string/control_quick" />
+
+        <TextView
+            android:id="@+id/device_control_quiet_tv"
+            style="@style/device_control_button_item"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/device_quietoff_btn"
+            android:onClick="doClick"
+            android:text="@string/control_silent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

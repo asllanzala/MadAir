@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enrollment_bg">
+
+    <include
+        android:id="@+id/auth_back_img_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <LinearLayout
+        android:id="@+id/auth_invite_scrollview_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/auth_back_img_title_id"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/auth_invite_user_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.honeywell.hch.airtouch.ui.common.ui.view.HPlusEditText
+                android:id="@+id/auth_invite_search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/auth_invite_result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/auth_invite_search_et"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/result_bg"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="doClick"
+                android:paddingEnd="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/auth_invite_display_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:onClick="doClick"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/auth_invite_add_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/add_contact"
+                android:paddingRight="21dp" />
+
+            <TextView
+                android:id="@+id/auth_invite_add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/auth_invite_add_iv"
+                android:layout_toRightOf="@+id/auth_invite_add_iv"
+                android:text="Add 15821716063 to invite list"
+                android:textColor="@color/group_edit_text"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/authorize_add_version_remind"
+        android:textColor="@color/particle_orientation_color"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/auth_invite_btn"
+        style="@style/blue_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="doClick" />
+</RelativeLayout>

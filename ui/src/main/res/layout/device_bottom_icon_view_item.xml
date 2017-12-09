@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/btn_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_txt_id"
+            android:src="@drawable/loading_error_icon"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/btn_txt_id"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            style="@style/alldevice_bottom_text_style"/>
+
+        <ImageView
+            android:id="@+id/error_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/btn_icon"
+            android:layout_alignTop="@+id/btn_icon"
+            android:layout_marginLeft="-3dip"
+            android:layout_marginTop="-3dip"
+            android:src="@drawable/small_red_dot"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

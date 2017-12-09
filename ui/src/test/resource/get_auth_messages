@@ -1,0 +1,19 @@
+{
+    "invitationList": [
+        {
+            "MessageID": 4006,
+            "MessageType": 5,
+            "SenderID": 7881,
+            "SenderName": "Mark",
+            "locationId": 11,
+            "locationName": "我的家",
+            "targetType": 1,
+            "targetID": 2010,
+            "targetName": "Name",
+            "authorityRole": 300,
+            "invitationTime": "2016-01-25T01:53:46.977",
+            "expirationTime": "2016-01-26T01:53:46.977",
+            "isExpired":True
+        }
+    ]
+}

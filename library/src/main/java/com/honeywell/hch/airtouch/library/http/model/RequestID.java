@@ -1,0 +1,120 @@
+package com.honeywell.hch.airtouch.library.http.model;
+
+/**
+ * network request identifier
+ * Created by liunan on 1/13/15.
+ */
+public enum RequestID {
+    // User Location
+    GET_LOCATION,
+    ADD_LOCATION,
+    SWAP_LOCATION,
+    DELETE_LOCATION,
+    ADD_DEVICE,
+    GET_HOME_PM25,
+
+    // Device Control
+    CHECK_MAC,
+    CONTROL_DEVICE,
+    GET_DEVICE_STATUS,
+    GET_DEVICE_CAPABILITY,
+    COMM_TASK,
+    DELETE_DEVICE,
+
+    //Password
+    UPDATE_PASSWORD,
+    CHANGE_PASSWORD,
+
+    //Clean time
+    ARRIVE_HOME_TIME,
+
+    // Emotional
+    EMOTION_BOTTLE,
+
+    // Group
+    CREATE_GROUP,
+    DELETE_GROUP,
+    ADD_DEVICE_TO_GROUP,
+    DELETE_DEVICE_FROM_GROUP,
+    UPDATE_GROUP_NAME,
+    GET_GROUP_BY_GROUP_ID,
+    GET_GROUP_BY_LOCATION_ID,
+    SEND_SCENARIO_TO_GROUP,
+    MULTI_COMM_TASK,
+    IS_DEVICE_MASTER,
+
+    // Authorization
+    GET_AUTH_UNREAD_MESSAGE,
+    CHECK_AUTH_USER,
+    GRANT_AUTH_TO_DEVICE,
+    REMOVE_DEVICE_AUTH,
+    REMOVE_GROUP_AUTH,
+    GET_AUTH_MESSAGES,
+    GET_AUTH_MESSAGE_BY_ID,
+    HANDLE_AUTH_MESSAGE,
+    GET_AUTH_DEVICES,
+    Get_AUTH_GROUP_DEVICES,
+    GET_DEVICE_LIST_BY_GROUP_ID,
+
+    // last RequestID need to login first before timeout
+    USER_LOGOUT,
+
+    // User Account
+    USER_LOGIN,
+    USER_REGISTER,
+    GET_SMS_CODE,
+    VERIFY_SMS_VALID,
+    UPDATE_SESSION,
+    PUSH_INFO,
+
+    // ThinkPage
+    ALL_DATA,
+    NOW_DATA,
+    AIR_DATA,
+    GET_WEATHER,
+    HOURLY_FUTURE,
+    HOURLY_HISTORY,
+
+    // Enrollment
+    SEND_PHONE_NAME,
+    GET_KEY,
+    GET_MAC_CRC,
+    GET_ERROR,
+    GET_ROUTER,
+    CONNECT_ROUTER,
+    GET_ENROLL_TYPE,
+
+    //get device info
+    GET_DEVICE_DETAIL_INFO,
+
+    //water
+    WATER_CONTROL_DEVICE,
+    GET_ALL_RUNSTAUS,
+    GET_ALL_DEVICE_TYPE_CONFIG,
+    ENROLL_DEVICE_TYPE,
+
+    //home control
+    CONTROL_HOME_DEVICE,
+
+    //Quick Action
+     QUICK_ACTION,
+    SHORT_TIMER_REFRESH,
+
+    //Message
+    GET_MESSAGES_PER_PAGE,
+    DELETE_MESSAGES,
+    GET_MESSAGE_BY_ID,
+    UPDATE_MESSAGE_STATUS,
+    GET_UNREAD_MESSAGES,
+
+    REFRESH_SESSION,
+    DELETE_MADAIR_DEVICE,
+    //feedback
+    FEED_BACK_TEXT,
+    FEED_BACK_IMG,
+    FEED_BACK_DELETE_IMG,
+    GET_DUST_AND_PM25,
+    GET_VOLUME_AND_TDS,
+    GET_TOTAL_DUST,
+    GET_TOTAL_VOLUME,
+}

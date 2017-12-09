@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background">
+
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <Button
+        android:id="@+id/startConnectBtn"
+        style="@style/blue_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="doClick"
+        android:text="@string/enroll_name_done"
+        android:textAllCaps="false"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_id"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/auth_receive_edit_mode_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/auth_receive_edit_from_tv"
+                style="@style/Authorize_big_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/authorize_from" />
+
+            <TextView
+                android:id="@+id/auth_receive_edit_from_name_tv"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Vincent" />
+
+            <ImageView
+                style="@style/separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/auth_receive_edit_place_tv"
+                style="@style/Authorize_big_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/authorize_send_invitation_place" />
+
+            <TextView
+                android:id="@+id/auth_receive_edit_place_name_tv"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Vincent's home" />
+
+            <ImageView
+                style="@style/separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/auth_owner_receive_device_tv"
+                style="@style/Authorize_big_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/authorize_send_invitation_device" />
+
+            <TextView
+                android:id="@+id/auth_receive_edit_device_name_tv"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="AirTouch01" />
+
+            <ImageView
+                style="@style/separateline_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/auth_receive_edit_role_tv"
+                style="@style/Authorize_big_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/authorize_receive_invitation_role" />
+
+            <TextView
+                android:id="@+id/auth_receive_edit_role_name_tv"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/authorize_control_role" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

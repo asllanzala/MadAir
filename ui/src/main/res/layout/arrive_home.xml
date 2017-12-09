@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enrollment_bg">
+
+    <include
+        android:id="@+id/enroll_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <RelativeLayout
+        android:id="@+id/has_deivce_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/enroll_title_id"
+        >
+
+        <LinearLayout
+            android:id="@+id/arrive_home_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/clock_iv"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_gravity="left|top"
+                android:src="@drawable/clock_white" />
+
+            <TextView
+                android:id="@+id/clock_tv"
+                style="@style/enroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-10dp">
+
+            <ImageView
+                android:id="@+id/arrive_home_background_left"
+                android:layout_width="155dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/arrive_home_background_left" />
+
+            <ImageView
+                android:id="@+id/arrive_home_background_right"
+                android:layout_width="155dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@drawable/arrive_home_background_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true">
+
+            <com.honeywell.hch.airtouch.library.wheelView.WheelView
+                android:id="@+id/hour_wheel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/time_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/hour_wheel"
+                android:background="@drawable/arrive_home_colon"
+                android:gravity="bottom|center_vertical"
+                android:textColor="@color/white" />
+
+            <com.honeywell.hch.airtouch.library.wheelView.WheelView
+                android:id="@+id/minute_wheel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/time_colon" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tell_air_touch_tv"
+            style="@style/blue_buton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:text="@string/tell_air_touch" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

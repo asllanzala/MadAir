@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/auth_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/total_tile_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/action_bar_bg">
+
+        <RelativeLayout
+            android:id="@+id/actionbar_tile_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top_content_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/actionbar_tile_bg">
+
+            <FrameLayout
+                android:id="@+id/enroll_back_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:onClick="doClick">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/back_icon" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/emotion_share_right_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/all_device_select_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="10dip"
+                    android:src="@drawable/device_edit"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/end_text_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:onClick="doClick"
+                    android:padding="10dip"
+                    android:text="@string/cancel"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_below="@id/top_content_id"
+            android:src="@drawable/title_bar_white_shadow"/>
+
+        <com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout
+            android:id="@+id/network_error_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/top_content_id">
+        </com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout>
+    </RelativeLayout>
+
+
+    <com.honeywell.hch.airtouch.ui.enroll.ui.view.EnrollIndicatorView
+        android:id="@+id/indicator_id"
+        android:layout_below="@id/total_tile_id"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.honeywell.hch.airtouch.ui.enroll.ui.view.EnrollIndicatorView>
+
+    <com.honeywell.hch.airtouch.ui.common.ui.view.CenterTextView
+        android:id="@+id/input_tip_id"
+        style="@style/enroll_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/indicator_id"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra = "3dp"
+        app:textbold="false"
+        android:text="@string/smartlink_inputpassword_str"
+        android:visibility="gone" />
+
+</RelativeLayout>

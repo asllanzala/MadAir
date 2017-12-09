@@ -1,0 +1,214 @@
+[
+    {
+        "locationId": 10497,
+        "deviceRunStatus": [
+            {
+                "deviceType": 1048577,
+                "deviceID": 28354,
+                "runStatus": {
+                    "fanSpeedStatus": "Speed_1",
+                    "fanFaultCode": "NO_FAULT",
+                    "aqDisplayLevel": "LEVEL_1",
+                    "runTime3": "RUN_TIME",
+                    "runTime2": "RUN_TIME",
+                    "runTime1": "RUN_TIME",
+                    "filter1Runtime": 414,
+                    "filter2Runtime": 499,
+                    "filter3Runtime": 0,
+                    "tiltSensorStatus": "OPERATING",
+                    "mobileCtrlFlags": "ENABLED",
+                    "scenarioMode": 1,
+                    "pM25Value": 9,
+                    "tvocValue": 65535,
+                    "isAlive": true,
+                    "cleanTime": [
+                        -1
+                    ],
+                    "cleanBeforeHomeEnable": false,
+                    "timeToHome": "0001-01-01T00:00:00",
+                    "filter1RfidFlag": "ActivationSuccess",
+                    "filter1RfidUID": "E0040150622017FF",
+                    "filter2RfidFlag": "ActivationSuccess",
+                    "filter2RfidUID": "E004015062201483",
+                    "filter3RfidFlag": "NotRFID",
+                    "filter3RfidUID": ""
+                }
+            },
+            {
+                "deviceType": 9999999,
+                "deviceID": 28355,
+                "runStatus": {
+                    "scenarioMode": 1,
+                    "errFlags": [
+                        2,
+                        3
+                    ],
+                    "waterQualityLevel": 1,
+                    "singleWaterMakingTime": 50,
+                    "inflowTDS": 200,
+                    "outflowTDS": 10,
+                    "outflowVolume": 200,
+                    "filters": [
+                        {
+                            "filterType": "1",
+                            "usageTime": 8,
+                            "usageVolume": 8,
+                            "timeCapabilitySetByUser": 15,
+                            "volumeCapabilitySetByUser": 15,
+                            "resetTime": "2015.10.22"
+                        },
+                        {
+                            "filterType": "2",
+                            "usageTime": 10,
+                            "usageVolume": 2,
+                            "timeCapabilitySetByUser": 10,
+                            "volumeCapabilitySetByUser": 3,
+                            "resetTime": "2016.11.23"
+                        }
+                    ],
+                    "isAlive": true,
+                    "mobileCtrlFlags": 1
+                }
+            }
+        ]
+    },
+    {
+        "locationId": 10498,
+        "deviceRunStatus": [
+            {
+                "deviceType": 1048577,
+                "deviceID": 28356,
+                "runStatus": {
+                    "fanSpeedStatus": "Speed_1",
+                    "fanFaultCode": "NO_FAULT",
+                    "aqDisplayLevel": "LEVEL_1",
+                    "runTime3": "RUN_TIME",
+                    "runTime2": "RUN_TIME",
+                    "runTime1": "RUN_TIME",
+                    "filter1Runtime": 414,
+                    "filter2Runtime": 499,
+                    "filter3Runtime": 0,
+                    "tiltSensorStatus": "OPERATING",
+                    "mobileCtrlFlags": "ENABLED",
+                    "scenarioMode": 1,
+                    "pM25Value": 9,
+                    "tvocValue": 65535,
+                    "isAlive": true,
+                    "cleanTime": [
+                        -1
+                    ],
+                    "cleanBeforeHomeEnable": false,
+                    "timeToHome": "0001-01-01T00:00:00",
+                    "filter1RfidFlag": "ActivationSuccess",
+                    "filter1RfidUID": "E0040150622017FF",
+                    "filter2RfidFlag": "ActivationSuccess",
+                    "filter2RfidUID": "E004015062201483",
+                    "filter3RfidFlag": "NotRFID",
+                    "filter3RfidUID": ""
+                }
+            },
+            {
+                "deviceType": 1048577,
+                "deviceID": 28357,
+                "runStatus": {
+                    "fanSpeedStatus": "Speed_1",
+                    "fanFaultCode": "NO_FAULT",
+                    "aqDisplayLevel": "LEVEL_1",
+                    "runTime3": "RUN_TIME",
+                    "runTime2": "RUN_TIME",
+                    "runTime1": "RUN_TIME",
+                    "filter1Runtime": 414,
+                    "filter2Runtime": 499,
+                    "filter3Runtime": 0,
+                    "tiltSensorStatus": "OPERATING",
+                    "mobileCtrlFlags": "ENABLED",
+                    "scenarioMode": 2,
+                    "pM25Value": 25,
+                    "tvocValue": 1000,
+                    "isAlive": true,
+                    "cleanTime": [
+                        -1
+                    ],
+                    "cleanBeforeHomeEnable": false,
+                    "timeToHome": "0001-01-01T00:00:00",
+                    "filter1RfidFlag": "ActivationSuccess",
+                    "filter1RfidUID": "E0040150622017FF",
+                    "filter2RfidFlag": "ActivationSuccess",
+                    "filter2RfidUID": "E004015062201483",
+                    "filter3RfidFlag": "NotRFID",
+                    "filter3RfidUID": ""
+                }
+            },
+            {
+                "deviceType": 9999999,
+                "deviceID": 28358,
+                "runStatus": {
+                    "scenarioMode": 1,
+                    "errFlags": [
+                        4
+                    ],
+                    "waterQualityLevel": 1,
+                    "singleWaterMakingTime": 50,
+                    "inflowTDS": 222,
+                    "outflowTDS": 111,
+                    "outflowVolume": 200,
+                    "filters": [
+                        {
+                            "filterType": "1",
+                            "usageTime": 8,
+                            "usageVolume": 8,
+                            "timeCapabilitySetByUser": 150,
+                            "volumeCapabilitySetByUser": 150,
+                            "resetTime": "2015.10.22"
+                        },
+                        {
+                            "filterType": "2",
+                            "usageTime": 10,
+                            "usageVolume": 2,
+                            "timeCapabilitySetByUser": 777,
+                            "volumeCapabilitySetByUser": 888,
+                            "resetTime": "2016.11.23"
+                        }
+                    ],
+                    "isAlive": true,
+                    "mobileCtrlFlags": 1
+                }
+            },
+            {
+                "deviceType": 9999999,
+                "deviceID": 28359,
+                "runStatus": {
+                    "scenarioMode": 1,
+                    "errFlags": [
+                        1
+                    ],
+                    "waterQualityLevel": 1,
+                    "singleWaterMakingTime": 50,
+                    "inflowTDS": 400,
+                    "outflowTDS": 800,
+                    "outflowVolume": 1000,
+                    "filters": [
+                        {
+                            "filterType": "1",
+                            "usageTime": 88,
+                            "usageVolume": 88,
+                            "timeCapabilitySetByUser": 100,
+                            "volumeCapabilitySetByUser": 100,
+                            "resetTime": "2015.10.22"
+                        },
+                        {
+                            "filterType": "2",
+                            "usageTime": 44,
+                            "usageVolume": 44,
+                            "timeCapabilitySetByUser": 101,
+                            "volumeCapabilitySetByUser": 101,
+                            "resetTime": "2016.11.23"
+                        }
+                    ],
+                    "isAlive": true,
+                    "mobileCtrlFlags": 1
+                }
+            }
+        ]
+    }
+]

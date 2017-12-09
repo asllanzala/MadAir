@@ -1,0 +1,772 @@
+<resources>
+    <string name="app_name">H Plus</string>
+    <string name="cancel">Cancel</string>
+    <string name="notice">Notice</string>
+
+    <!--common-->
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="done">Done</string>
+    <string name="no">No</string>
+    <string name="retry">Retry</string>
+    <string name="no_data">No data available</string>
+    <string name="not_connect_device_network">Failed to communicate with device! Please replug the power cord of the device and try again.</string>
+
+
+    <!-- enrollment -->
+    <string name="enroll_title4">Name Your Device</string>
+    <string name="enroll_scanning">Scanning</string>
+    <string name="enroll_scanning_welcome">Requesting data, please wait</string>
+    <string name="enroll_connecting">Connecting</string>
+    <string name="enroll_home_wifi">home WIFI</string>
+    <string name="enroll_networks">Available networks</string>
+    <string name="enroll_next">Next</string>
+    <string name="enroll_password">Password</string>
+    <string name="enroll_hint_ssid">Enter network name</string>
+    <string name="enroll_ssid_security">Network Security</string>
+    <string name="enroll_done">Done</string>
+    <string name="enroll_other">Other&#8230;</string>
+    <string name="enroll_error">Operation failed! Please try again.</string>
+    <string name="quit">Do you want to quit?</string>
+    <string name="error_code_10">"Invalid Wi-Fi password input for last enrollment. Please ensure you input a correct password.</string>
+    <string name="error_code_20">"The Wi-Fi name you entered last time cannot be found. Make sure to enter a right Wi-Fi name.</string>
+    <string name="error_code_30">"The Wi-Fi name you entered last time cannot be found. Make sure to enter a right Wi-Fi name.</string>
+    <string name="enroll_page2_title_line3">Name your device</string>
+    <string name="enroll_page2_title_line4">Home Location</string>
+    <string name="enroll_page3_title_line1">Connect device to Wi-Fi</string>
+    <string name="enroll_name_done">Next</string>
+    <string name="enroll_selected">Selected</string>
+    <string name="enroll_exit">Exit</string>
+    <string name="enroll_update">Update</string>
+
+    <!-- user register, login -->
+    <string name="login_forget_password">Forgot password</string>
+    <string name="login_new_user">Sign Up</string>
+    <string name="login">Sign In</string>
+    <string name="log_in">Signing in...</string>
+    <string name="register">Sign Up</string>
+
+    <string name="register_nick_name">User name</string>
+    <string name="register_confirm_password">Confirm password</string>
+    <!--lowercase character.</string>-->
+    <string name="non_activated">Unactivated account! Please activate your account first. If you encountered problems when activating your account, please contact customer care.</string>
+    <string name="login_password_invalid">Failed to sign in! Invalid mobile number or password.</string>
+    <string name="change_password_invalid">Failed to change password! Invalid old password.</string>
+    <string name="password_not_match">Passwords don\'t match! Please retype and try again.</string>
+
+    <!-- edit home  -->
+    <string name="renaming">Editing home...</string>
+    <string name="name_place">Name your home</string>
+    <string name="home_name_empty">Home name cannot be empty!</string>
+    <string name="city_not_found">This city cannot be found!</string>
+
+    <!-- add device  -->
+    <string name="enroll_select_city">Please select a location</string>
+
+    <string name="my_device">Living room device</string>
+    <string name="enroll_loading">Loading</string>
+    <string name="footview_loading">Loading...</string>
+
+    <string name="adding_home">Adding home...</string>
+    <string name="deleting_home">Deleting home...</string>
+    <string name="delete_device_fail">Failed to delete device(s)! Please try again.</string>
+    <string name="device_no_auth">You can only read device data.</string>
+    <string name="group_no_auth">You can only read group data.</string>
+    <string name="select_location">Select location</string>
+    <string name="search">Search&#8230;</string>
+    <string name="gps">Location:</string>
+    <string name="same_home">This place already existed! </string>
+    <string name="device_already_registered_authorize">You cannot enroll a device which has been shared to you!</string>
+    <string name="offline_device_already_registered_authorize">You cannot update Wi-Fi info of a shared device!</string>
+
+    <!-- control device  -->
+    <string name="control_manual">Manual</string>
+
+    <string name="control_timeout">Operation time out! Please try again.</string>
+    <string name="get_home_at">Reservation time</string>
+    <string name="clean_time_prex">Clean up in</string>
+    <string name="clean_time_default">20 minutes</string>
+    <string name="clean_time_hour">%1$d h</string>
+    <string name="clean_time_minute">%1$d mins</string>
+
+    <!-- device status -->
+    <string name="device_pm25">PM2.5</string>
+
+    <!--airTouchFilter-->
+
+    <string name="filter_instruction">Filter instruction</string>
+
+
+    <string name="change_password">Change Password</string>
+    <string name="change_password_success">Password changed successfully!</string>
+    <string name="reset_password_success">Reset password successfully!</string>
+
+    <!-- gps page -->
+    <string name="tell_air_touch">Set</string>
+    <string name="cancel_fail">Failed to cancel!</string>
+    <string name="tell_fail">Failed to set time!</string>
+    <string name="time_arrive_home">Reservation</string>
+
+    <!-- home page -->
+    <string name="temp_unit_c">°C</string>
+
+    <!--mobile-->
+    <string name="sending_sms">Sending SMS...</string>
+    <string name="verification_code">Verification code</string>
+    <string name="sms_arrive">Your SMS should arrive in 1 minute.</string>
+    <string name="sms_code_wrong">Invalid verification code!</string>
+    <string name="sms_resend">Resend</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="sms_send_fail">Failed to send out verification code!</string>
+
+    <!--house-->
+
+    <string name="deleting_device">Deleting device</string>
+
+    <!--emotion pager-->
+    <string name="pm25_str">PM2.5</string>
+
+
+
+    <!--india -->
+
+    <!-- weather -->
+    <string name="weather_today">Today</string>
+    <string name="weather_recent">7 days</string>
+    <string name="weather_aqi">AQI</string>
+    <string name="weather_pm25">PM2.5</string>
+    <string name="weather_temperature">%1$d&#8211;%2$d°C</string>
+
+    <!-- on travel reminder -->
+
+
+
+    <!-- group -->
+    <string name="group_control_device_mode_home">Home</string>
+    <string name="group_control_device_mode_away">Away</string>
+    <string name="group_control_device_mode_sleep">Sleep</string>
+    <string name="group_control_device_mode_awake">Awake</string>
+    <string name="group_name_exist">This group name is already taken. Please enter a different one.</string>
+    <string name="version_title">New version available: %s</string>
+    <string name="update_now">Update</string>
+    <string name="remind_later">Later</string>
+    <string name="updating_group_name">Updating group name...</string>
+    <string name="group_master_not_delete">Please ungroup this master device and then try to delete it. This operation will ungroup this group.</string>
+
+    <!-- all device -->
+    <string name="group">Groups</string>
+
+    <string name="setting_clock">Setting...</string>
+    <string name="canceling_clock">Cancelling...</string>
+
+
+    <!--<string name="sensor_error">The PM2.5 sensor of your device does not work! </string>-->
+    <!--<string name="sensor_support">Please call customer care 400-7204321 for technical support.</string>-->
+    <!--<string name="get_it">Got it</string>-->
+    <string name="get_it">Got it</string>
+
+    <string name="arrive_home_unsetted">Set a reservation time. Air purifier devices will clean air at a time set in advance. It’ll keep air clean before the reservation time.</string>
+    <string name="arrive_home_settled">Reservation time has been set. Air purifier devices will clean air at a time set in advance. It’ll keep air clean before the reservation time.</string>
+    <string name="arrive_time_in30min">Cannot set arrival time within 30 minutes. Please set a longer time.</string>
+    <string name="arrive_home_all_device_offline">All of air purifier devices are offline. If they\'re still offline till reservation time, reservation will not take effect.</string>
+
+    <string name="smartlink_inputpassword_str">Please enter the password of your Wi-Fi and then tap Next button.</string>
+    <string name="smartlink_password_str">Enter your password</string>
+    <string name="scan_title">Align device QR code within frame to scan</string>
+    <string name="no_data_device">Unknown device</string>
+    <string name="no_support_smart_link">This device doesn’t support Wi-Fi. It cannot be enrolled to app.</string>
+    <string name="connect_timeout_title1">Connection Timeout</string>
+    <string name="connect_timeout_content">You can try solutions as below or call Customer Care directly.</string>
+    <string name="connect_timeout_content1">1. You may entered a wrong password. Please tap Retry button in the bottom to enter password again.</string>
+    <string name="connect_timeout_content2">2. Please check if the blue button in the picture below is light up. If not, please press and hold the button for 3 seconds until hear a chime, and then retry.</string>
+    <string name="connect_timeout_content3">"4. You can also contact customer care."</string>
+    <string name="connect_timeout_content4">"3. This device only support 2.4GHz Wi-Fi network. Please ensure your mobile phone is connected to a 2.4GHz Wi-Fi network."</string>
+    <string name="connect_timeout_retry">Retry</string>
+    <string name="connect_timeout_contact">AP mode</string>
+    <string name="device_register_id">This device is already in your account. Do you want to update Wi-Fi configuration of this device?</string>
+    <string name="device_update_wifi_success">Wi-Fi configuration has been updated successfully.</string>
+    <string name="samart_next_btn">Next</string>
+
+    <string name="smart_permission_deny_messege">Allow H Plus access to your camera in system privacy settings to start scanning QR code.</string>
+    <string name="phone_call_permission_deny">Allow H Plus access to phone services in system settings to dial.</string>
+    <string name="already_registed">It seems you\'ve already signed up. Please sign in directly.</string>
+    <string name="sms_hint">Your SMS should arrive in 1 minute. If there is a delay or you require support, please call Customer Care between 9am – 6pm, Mon-Sat.</string>
+
+
+
+
+    <string name="no_located_permission_scantxt">Cannot access to location services, allow H Plus access to Location Services in System Settings to continue the enrollment.</string>
+    <string name="gps_no_open">Location services off, turn on Location Services in System Settings to continue the enrollment.</string>
+    <string name="go_to_setting">Settings</string>
+
+    <string name="authorize_list">Device List</string>
+    <string name="authorize_to_item">Share to</string>
+    <string name="authorize_select_item">Select Role</string>
+    <string name="authorize_confirm_item">Confirmation</string>
+    <string name="authorize_to_revoke_item">Share to</string>
+    <string name="authorize_to">Share to</string>
+    <string name="authorize_invite_edit_hind">Input mobile number</string>
+    <string name="authorize_add_phone">Add %s as a receiver</string>
+
+    <string name="authorize_description">Description</string>
+    <string name="authorize_controler_remind">A controller can view running status of shared devices and also perform remote control.</string>
+    <string name="authorize_viewer_remind">An observer can only view running status of shared devices</string>
+    <string name="authorize_send_invitation">Send Invitation</string>
+
+    <string name="authorize_receive_invitation_role">Role</string>
+    <string name="authorize_send_invitation_successfully">Invitation has been sent out successfully.</string>
+    <string name="authorize_send_revoke_successfully">Device sharing has been revoked successfully.</string>
+    <string name="authorize_send_remove_successfully">Device has been removed successfully.</string>
+    <string name="authorize_send_remove_fail">Failed to remove device. Please try again.</string>
+    <string name="authorize_send_revoke_fail">Failed to revoke authorization. Please try again.</string>
+    <string name="authorize_send_send_fail">Failed to send invitation. Please try again.</string>
+    <string name="authorize_auth_detail">Sharing Details</string>
+
+    <string name="authorize_from">From</string>
+    <string name="authorize_notification_from">From %s</string>
+
+    <string name="authorize_message_from">From:</string>
+    <string name="authorize_message_place">Place:</string>
+
+    <string name="authorize_message_authority">Role:</string>
+    <string name="authorize_message_send">Sent Time</string>
+    <string name="authorize_message_expire">Expiration Time</string>
+    <string name="authorize_message_accept_by">Accepted By:</string>
+    <string name="authorize_message_decline_by">Declined By:</string>
+    <string name="authorize_message_revoke_by">Revoked By:</string>
+    <string name="authorize_message_remove_by">Removed By:</string>
+    <string name="authorize_message_accept_time">Accepted Time:</string>
+    <string name="authorize_message_decline_time">Declined Time:</string>
+    <string name="authorize_message_revoke_time">Revoked Time:</string>
+    <string name="authorize_message_remove_time">Removed Time:</string>
+    <string name="authorize_message_remind">Device Sharing Invitation Expired</string>
+    <string name="authorize_message_remind_tips">This invitation is expired!</string>
+    <string name="authorize_message_accept">Accept</string>
+    <string name="authorize_message_decline">Decline</string>
+    <string name="authorize_message_get">Got it</string>
+    <string name="authorize_invitation">Authorization invitation</string>
+    <string name="authorize_my_devices">My device(s)</string>
+
+    <string name="authorize_add_one_remind">You can only share to one contact.</string>
+    <string name="authorize_add_remind">%s is not a H Plus user yet. Please ask this contact to register as a H Plus user and then try again.</string>
+    <string name="authorize_add_version_remind">Device sharing requires version 3.5.0 or higher. Please make sure the contact use a right version or they cannot accept your invitation.</string>
+    <string name="authorize_send_invitation_role">Role</string>
+    <string name="authorize_remove_remind">Remove shared device \"%s\" from your account?</string>
+    <string name="authorize_revoke_remind">Revoke shared device \"%1$s\" from %2$s?</string>
+    <string name="authorize_no_device">You have no device yet.</string>
+    <string name="authorize_decline_confirm">Decline the invitation from %s?</string>
+    <string name="authorize_decline_success">Decline successfully.</string>
+    <string name="authorize_accept_success">Accept successfully.</string>
+    <string name="authorize_send_invitation_place">Place</string>
+
+    <string name="authorize_response_error">Operation failed! Please try again.</string>
+    <string name="authorize_authto_me_remind">You cannot share device to yourself.</string>
+    <string name="authorize_delete_confirm">Are you sure to delete this device? This operation will revoke sharing of this device if you shared it to other users. It may take several minutes.</string>
+    <string name="authorize_enterprise_remind">Cannot authorize to enterprise account!</string>
+    <string name="authorize_s">\'s device(s)</string>
+    <string name="authorize_delete_message">Delete Message</string>
+
+
+    <string name="sideitem_customer_care">Customer Care</string>
+    <string name="push_notification_update">This push notification requires a higher version. Update now?</string>
+    <string name="push_notification_update_btn">Update</string>
+
+    <!-- Message Center -->
+    <string name="message_center_title">Messages</string>
+    <string name="message_center_failed">Failed to load more messages!</string>
+    <string name="message_handle_refular_title">Message</string>
+
+    <!-- Smart Ro product-->
+    <string name="smart_ro_water">Water</string>
+    <string name="water_quality">Water Quality</string>
+
+    <string name="emotion_water">Water</string>
+    <string name="water_filter_no_permission">You don\'t have the permission to view filters currently.</string>
+    <string name="water_abnormal">Error</string>
+
+    <string name="see_detail">See Details</string>
+    <string name="device_deleted_already">This device has been deleted!</string>
+    <string name="downloading_new_version_str">Downloading update. Please wait.</string>
+
+    <!-- New Enrollment-->
+    <string name="enroll_scan_title">Scan QR Code</string>
+    <string name="enroll_title_activie">Active Device Wi-Fi</string>
+    <string name="enroll_title_welcome">Connect to Device Wi-Fi</string>
+    <string name="enroll_title_input_password">Connect Device to Internet</string>
+    <string name="enroll_title_network_found">Networks Found by Device</string>
+    <string name="enroll_name">Network name</string>
+    <string name="enroll_security">Network password</string>
+    <string name="enroll_device_model_update">This device requires a newer version. Please update your app.</string>
+    <string name="enroll_setting_btn">Settings</string>
+    <string name="enroll_device_model_error">Failed to fetch device support info! Please try again.</string>
+    <string name="enroll_choice_title_content">Select the product you want to add.</string>
+    <string name="enroll_choice_model_title">Select Device Model</string>
+    <string name="enroll_choice_title">Select Device</string>
+    <string name="enroll_btn_setting">Settings</string>
+    <string name="enroll_commnunication_other_channel">You may experience enrollment failures on a few mobile devices if cellular data is turned ON. Please turn OFF cellular data (2G/3G/4G) on your mobile phone and try device enrollment.</string>
+    <string name="enroll_wifi_unavaiable">Please connect your mobile phone to Wi-Fi first and then switch back to app.</string>
+    <string name="enroll_network_unavaiable">Network unavailable! Please connect to internet first.</string>
+
+    <!--New AllDevice and group control-->
+    <string name="all_device_bottom_selectall">Select All</string>
+    <string name="all_device_bottom_deselectall">Deselect All</string>
+    <string name="all_device_bottom_newgroup">New Group</string>
+    <string name="all_device_bottom_movein">Move Into</string>
+    <string name="all_device_bottom_delete">Delete</string>
+    <string name="all_device_bottom_moveout">Move Out</string>
+    <string name="all_device_other">Devices</string>
+    <string name="all_device_title_select">Select</string>
+    <string name="all_device_title_cancel">Cancel</string>
+    <string name="all_device_tvoc">TVOC</string>
+    <string name="new_group_dialog_txt">Name your new group</string>
+    <string name="all_device_moveinto_confirm">Move selected devices into group \"%s\"?</string>
+    <string name="duplication_group_name">This group name already exists!</string>
+    <string name="need_master_device_tip">You have to select at least one master device(Air Touch-X, Air Touch-X2, Air Touch-X3) to create a group.</string>
+    <string name="group_name_cannot_empty">Please enter a group name!</string>
+    <string name="select_a_group">Select a group</string>
+    <string name="group_control_power_on">Power On</string>
+    <string name="group_control_home">Home</string>
+    <string name="group_control_sleep">Sleep</string>
+    <string name="group_control_awake">Awake</string>
+    <string name="group_control_away">Away</string>
+    <string name="move_out_to_group">Move selected devices out of group \"%1s\"?</string>
+    <string name="move_out_master_device">The device(s) you selected include master device of this group.Moving out master device will ungroup these devices. Are yousure to move out selected device(s)?</string>
+
+    <string name="group_control_part_fail">Some devices didn\'t respond to group control!</string>
+
+    <string name="no_last_operation">No last operation</string>
+    <string name="last_operation">Last operation</string>
+    <string name="group_control_na">N/A</string>
+
+    <!-- new Login in feature-->
+    <string name="account_country_text_str">Country</string>
+    <string name="account_phone_number_str">Mobile number</string>
+    <string name="china_str">China</string>
+    <string name="india_str">India</string>
+    <string name="poily_text_str">By clicking the \"Next\" button, you agree to Honeywell\'s Privacy Policy and EULA.</string>
+    <string name="user_not_exist">Reset password failed! User \"%s\" was not found.</string>
+    <string name="update_password_error">Reset password failed! Password is not valid.</string>
+    <string name="verification_code_hint">4 digits verification code</string>
+    <string name="nickname_hint">Maximum 9 characters</string>
+    <string name="confirm_ps_hint">Retype your password</string>
+
+    <string name="eroll_device_update_wi_fi">This device is already in your account. Do you want to update Wi-Fi configuration of this device?</string>
+
+
+    <!--India feature -->
+    <string name="contact_info">Contact Info</string>
+    <string name="verifiationv_str">Verification</string>
+    <string name="user_account_password_hint">6-30 characters</string>
+    <string name="forgot_pw_btn">Reset</string>
+    <string name="old_password_hint">Input current password</string>
+    <string name="change_password_confirm_pw_hint">Retype new password</string>
+    <string name="change_pw_btn">Change</string>
+
+    <string name="enroll_qr_code">No QR code?</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="login_new_user_text">Sign up</string>
+
+    <string name="not_register_user_tip">It seems you haven\'t registered yet. Please sign up first.</string>
+    <string name="is_verifying">Verifying...</string>
+    <string name="enterprise_not_support_tip">Cannot reset password for enterprise account! Please contact customer care.</string>
+
+    <string name="resetting_password">Resetting password...</string>
+    <string name="changing_password">Changing password...</string>
+
+    <string name="register_success">Sign up succeeded!</string>
+    <string name="register_failed">Sign up failed!</string>
+    <string name="registering">Signing up...</string>
+    <string name="live_room">Living Room</string>
+
+    <!--new HomeManagement -->
+    <string name="home_manager_title">Home Management</string>
+    <string name="home_manager_add">Add</string>
+    <string name="home_manager_add_home">Add Home</string>
+    <string name="home_manager_set_default">Set default</string>
+    <string name="home_manager_rename">Rename</string>
+    <string name="home_manager_delete">Delete</string>
+    <string name="home_manager_input">Input a new name</string>
+    <string name="home_manager_delete_remind">Are you sure to delete \"%s\"?</string>
+
+    <string name="home_manager_input_city">Input city name</string>
+    <string name="home_manager_delete_home_fail">Failed to delete home!</string>
+    <string name="home_manager_add_home_fail">Failed to add home!</string>
+    <string name="home_manager_edit_home_fail">Failed to edit home!</string>
+    <string name="home_manager_delete_home_device_fail">Oops! Cannot delete a home with devices enrolled. Please delete devices first to proceed.</string>
+    <string name="home_manager_delete_home_device_already">Oops! This home cannot be found.</string>
+    <string name="home_manager_city_name">City name</string>
+    <string name="add_to_home">Add This Home</string>
+    <string name="home_manager_no_data1">You haven\'t added home yet.</string>
+    <string name="home_manager_no_data2">Tap the button below to add home.</string>
+
+    <string name="authorization_home_ctrl_str">"Scenarios are not available for shared home"</string>
+    <string name="home_page_no_control_device">No controllable devices!\nScenarios are not available.</string>
+
+    <string name="connect_wifi_timeout">Cannot communicate with device! To ensure your phone has been connected to device AP, Go to system Wi-Fi settings and select device SSID \"%1$s XXXXXX\". If you cannot find the SSID. You can try to press and hold Wi-Fi button on device for %2$s seconds.</string>
+    <string name="enroll_btn_quite">Quit</string>
+
+
+
+    <!-- dashboard string -->
+    <string name="dash_board_btn_text">Dashboard</string>
+    <string name="devices_btn_text">Devices</string>
+    <string name="messages_btn_text">Messages</string>
+    <string name="me_btn_text">Me</string>
+    <string name="home_ctrl_awake">Awake</string>
+
+    <string name="dashboard_water_quality">Water quality</string>
+
+    <string name="all_device_worse">"Indoor environment is not good!"</string>
+    <string name="only_airtouch_worse">"Indoor air quality is not good!"</string>
+    <string name="only_water_worse">"Drinking water quality is not good!"</string>
+    <string name="no_device_worse">"Safe and Sound!"</string>
+    <string name="has_error_msg">"Device error detected!\nGo to Devices tab to check detail."</string>
+    <string name="unsupport_device_top_msg_str">"Unsupported device detected!\nGo to Devices tab to check detail."</string>
+    <string name="unsupport_device_msg_str">"No data can be read!"</string>
+
+    <string name="all_device_loading">Loading, please wait...</string>
+    <string name="nodevice_top_text">No device in this home!</string>
+
+
+    <string name="tap_add_device_msg">Tap the button above to add device.</string>
+    <string name="all_device_loading_failed">Loading data failed!</string>
+
+    <string name="no_message">You have no message yet.</string>
+    <string name="authorization_deleted">This message no longer exists!</string>
+
+
+    <!-- new Device control -->
+    <string name="device_control_device_error">Device Error</string>
+    <string name="device_control_filter_status">Filter usage status</string>
+    <string name="device_control_filter_remain">Remaining</string>
+    <string name="device_control_filter_empty">Running out! Need a new one.</string>
+    <string name="device_control_prefilter_empty">Need cleaning!</string>
+    <string name="device_control_product_name">Product name:</string>
+    <string name="device_control_firmware_version">Firmware version:</string>
+    <string name="device_control_not_control">Remote Control Disabled</string>
+    <string name="device_control_not_control_remind">Remote control was disabled on your device. You can enable it by pressing remote control button on device.</string>
+    <string name="device_control_offline">Device Offline</string>
+
+    <string name="device_control_offline_remind_step1">1.Power supply of your device was cut off.</string>
+    <string name="device_control_offline_remind_step2">2.Your Wi-Fi network may be turned off.</string>
+    <string name="device_control_offline_remind_step3">3.Your device is out of Wi-Fi cover range.</string>
+    <string name="device_control_offline_remind_step4">4.Your Wi-Fi network password was changed. To make your device online, you can update Wi-Fi info.</string>
+    <string name="device_control_offline_error_title">Device error detected before offline.</string>
+    <string name="device_control_unauth_filter">Unauthorized filter!</string>
+    <string name="device_control_power_off">Power Off</string>
+    <string name="device_control_power">Power</string>
+    <string name="device_control_power_off_remind">Modes are not available if device is power off. You can turn on your device by pressing power button.</string>
+    <string name="device_control_introduction">Introduction</string>
+    <string name="device_control_user_nanual">User Manual</string>
+    <string name="device_control_user_eula">Legal Terms</string>
+    <string name="device_control_help">Help</string>
+    <string name="contact_customer_care">contact customer care</string>
+    <string name="device_control_fan_speed">Fan Speed</string>
+    <string name="device_control_auqa_filter_status">Filter usage status</string>
+
+    <!-- new Me-->
+    <string name="me_title">Me</string>
+    <string name="me_profile">Profile</string>
+    <string name="me_home_manager">Home Management</string>
+    <string name="me_share_device">Share Device</string>
+    <string name="me_add_device">Add Device</string>
+    <string name="me_customer_care">Customer Care</string>
+    <string name="me_about">About</string>
+    <string name="me_user_name">User Name</string>
+    <string name="me_mobile_number">Mobile Number</string>
+    <string name="me_change_password">Change Password</string>
+    <string name="me_sign_out">Sign Out</string>
+    <string name="me_comapany_info">Company Info</string>
+    <string name="me_comapany_detail">Honeywell International Inc</string>
+    <string name="me_copyright">Copyright</string>
+    <string name="me_copyright_detail">© 2016 Honeywell International Inc</string>
+    <string name="me_version">Version</string>
+    <string name="me_signout_loading">Signing out...</string>
+    <string name="me_signout_fail">Failed to sign out!</string>
+    <string name="me_user_id">Account</string>
+    <string name="me_new_features">New Features</string>
+    <string name="clean_now_str">Attention</string>
+
+    <!-- new Quick action -->
+    <string name="quick_action_no_action">No device needs your attention.</string>
+    <string name="quick_action_attention_device">Data is from device \"%s\".</string>
+    <string name="quick_action_pm25_title">PM2.5</string>
+    <string name="quick_action_tvoc_title">Total Volatile Organic Compounds</string>
+    <string name="quick_action_device_list_title">Devices which need your attention:</string>
+
+    <!--weather-->
+    <string name="weathr_now">Now</string>
+    <string name="get_weathr_error">Failed to load outdoor info!</string>
+
+    <!-- new emotion -->
+    <string name="emotion_title_statist">Statistics</string>
+    <string name="emotion_title_yesterday">Yesterday</string>
+    <string name="emotion_title_week">This Week</string>
+    <string name="emotion_title_month">This Month</string>
+    <string name="emotion_title_far">So Far</string>
+    <string name="emotion_title_air_title">Air Purifier&#160;</string>
+    <string name="emotion_title_water_title">Water Purifier&#160;</string>
+    <string name="emotion_title_air_content">has collected</string>
+    <string name="emotion_title_water_content">has provided</string>
+    <string name="emotion_particular_matters">particular matters.</string>
+    <string name="emotion_pure_water">pure water.</string>
+    <string name="emotion_mg">mg</string>
+    <string name="emotion_g">g</string>
+    <string name="emotion_kg">kg</string>
+    <string name="emotion_l">L</string>
+    <string name="emotion_m">m³</string>
+    <string name="emotion_air_ic">Air</string>
+    <string name="emotion_water_ic">Water</string>
+    <string name="emotion_share_title">Extract QR code to download app.</string>
+    <string name="emotion_share_logo_left">Powered by Honeywell H Plus</string>
+    <string name="emotion_share_logo_right">&#160;H Plus</string>
+
+    <!-- home control-->
+    <string name="home_control_all_failed">All devices didn\'t respond to scenario control!</string>
+    <string name="home_control_part_failed">Some devices didn\'t respond to scenario control!</string>
+    <string name="home_control_timeout">Scenario control failed! Please try again.</string>
+
+    <string name="unsupport_update_msg">This device requires newer version app. Please update.</string>
+    <string name="unsupport_update_btn">Update</string>
+
+
+    <string name="login_failed">Failed to sign in</string>
+
+    <!-- tutorial page -->
+    <string name="tutorial_skip">Skip</string>
+    <string name="tutorial_start">Get Started</string>
+
+    <string name="enroll_socket_timeout">Cannot communicate with device! Please re-plug power cord, then press and hold Wi-Fi button on device for %1$s seconds to retry.</string>
+
+    <string name="cache_loading_failed">loading failed! </string>
+
+    <string name="network_off_msg">Network is off! Please turn it on. </string>
+    <string name="network_error_msg">Failed to connect to server! </string>
+
+    <string name="no_content_yet">No content yet. </string>
+
+
+    <!-- message Center-->
+    <string name="p2refresh_release_refresh">Release to refresh</string>
+    <string name="p2refresh_pull_to_refresh">Pull down</string>
+    <string name="p2refresh_doing_head_refresh">Refreshing...</string>
+    <string name="message_clear">Clear</string>
+    <string name="message_clear_all">Clear All</string>
+    <string name="message_clear_select_message">Are you sure to clear selected message(s)?</string>
+    <string name="message_clear_select_all_message">Are you sure to clear all messages?</string>
+    <string name="message_clearing">Clearing...</string>
+    <string name="message_clear_fail">Failed to clear message(s)!</string>
+    <string name="message_check_device">Check Device Info</string>
+    <string name="message_check_time">Time</string>
+    <string name="message_remote_title">Remote Control</string>
+    <string name="message_device_error">Device Error</string>
+    <string name="message_device_share">Device Sharing</string>
+    <string name="message_delete_fail">Failed to delete message!</string>
+    <string name="message_acept_fail">Failed to accept invitation!</string>
+    <string name="message_decline_fail">Failed to decline invitation!</string>
+    <string name="message_new_version">This message requires newer version app. Please update your app to load this message.</string>
+    <string name="message_not_find_device">Cannot find this device! Maybe it has been deleted from your account.</string>
+    <string name="message_cache_loading_failed">loading failed</string>
+
+    <!-- enroll feature-->
+    <string name="enroll_device_info">Device Information</string>
+    <string name="enroll_product_name">Product name:&#160;</string>
+    <string name="enroll_device_type">Product type:&#160;</string>
+    <string name="enroll_device_model">Model:&#160;</string>
+    <string name="enroll_air_touch_device_type">Air Purifier</string>
+    <string name="enroll_aqua_touch_device_type">Water Purifier</string>
+    <string name="enroll_enroll_now">Enroll Now</string>
+    <string name="enroll_smartlink_hear_time">Please plug device power cord to socket and make sure device is powered on. After that, press and hold Wi-Fi button on device for 3 seconds until hear one chime.</string>
+    <string name="enroll_ap_hear_time">Please plug device power cord to socket and make sure device is powered on. After that, press and hold Wi-Fi button on device for 10 seconds until hear two chime.</string>
+    <string name="enroll_loading_type">...</string>
+    <string name="enroll_connect_phone_to_device">To exchange data with device, your phone has to be connected to device AP.</string>
+    <string name="enroll_wifi_on">On</string>
+    <string name="enroll_wifi">Wi-Fi</string>
+    <string name="enroll_wlan">WLAN</string>
+    <string name="enroll_xxx">&#160;XXXX</string>
+    <string name="new_place">New Place</string>
+    <string name="existed_place">Existed Place</string>
+    <string name="where_to_putdevice">Where to Put Your Device?</string>
+    <string name="home_selected_ways_id">Where do you want to put your device? You can select an existed one or create a new one.</string>
+    <string name="create_home">Creating Place</string>
+    <string name="name_device_msg">Give your device a name so that you can distinguish it from other devices.</string>
+    <string name="register_device_title_msg">Register Device</string>
+    <string name="register_device_center_msg">Registering this device to your account. This may take one or two minutes. Please wait.</string>
+    <string name="enroll_finish">Finished</string>
+    <string name="enroll_success_msg">Device has been added successfully! You can go to Devices tab to check device info now.</string>
+    <string name="enroll_failed_timeout">Registering device time out! Tap Retry button to try again. If it keeps failed, please contact customer care for help.</string>
+    <string name="enroll_failed_register_by_other">We encountered a problem when registering this device. Please contact customer care for help.</string>
+    <string name="enroll_failed_commtask_failed">Failed to fetch enrollment result! You probably input a wrong Wi-Fi password or network of your phone is not stable. Please check if can find this device in Device tab. If not, please try to enroll device again.</string>
+    <string name="enroll_failed_other_failed">Failed to add device! You can try to add device again. If it keeps failed, please contact customer care for help.</string>
+    <string name="enroll_failed_title">Failed</string>
+    <string name="custom_care_string">contact customer care</string>
+
+    <string name="enroll_before_play_title">Find QR Code</string>
+    <string name="enroll_before_play_content">You can find the QR code in these places:</string>
+    <string name="enroll_before_play_step1">1. On device body.</string>
+    <string name="enroll_before_play_step2">2. On device package.</string>
+    <string name="enroll_before_play_step3">3. In quick user guide.</string>
+    <string name="ap_send_wifiinfo_error1">1. You might choosed a wrong Wi-Fi network or entered a wrong password. In this case, you can tap Retry button to retry.</string>
+    <string name="enroll_connection_timeout">Check Internet Access</string>
+    <string name="connect_wifi_msg">Please connect your phone to an available network first.</string>
+    <string name="connect_wifi_msg2">Your phone has been connected to an available network. Tap the button below to continue.</string>
+    <string name="quit_enroll_confirm_msg">Your phone might be still connected to device Wi-Fi AP. You may need to switch to previous network to get internet access.</string>
+    <string name="device_not_connect_phone">Failed to connect device to server! Please replug the power cord of the device and try again.</string>
+    <string name="connect_device_to_internet_tipmsg">We\'ll connect the device to the same Wi-Fi network as your mobile phone\'s.</string>
+    <string name="send_wifiinfo_tipmsg">This operation may take about 1 minute, please wait.</string>
+    <string name="network_found_by_device_title_content">As below is a list of all supported Wi-Fi networks scanned by device. Please select one of them to connect.</string>
+    <string name="connect_device_to_device_title_content">Device will be connected to this selected Wi-Fi network.</string>
+    <string name="enroll_invalid_qr_code">Invalid QR code.</string>
+
+    <string name="device_wifi_off">You might choose a wrong device or your device Wi-Fi AP is off. Please try gain.</string>
+
+    <string name="new_place_failed">Failed to create place!</string>
+
+    <string name="connecting_failed_title"> Connecting Failed</string>
+
+
+    <string name="spannable_string_1">3</string>
+    <string name="spannable_string_2">10</string>
+    <string name="spannable_string_3">one</string>
+    <string name="spannable_string_4">two</string>
+
+    <!-- try demo-->
+    <string name="me_try_demo">Try now</string>
+    <string name="tutorial_one_title">Curve and bar chart</string>
+    <string name="tutorial_one_content">Now you can see historical data statistics include curve chart and bar chart for air and water purifier devices.</string>
+    <string name="try_demo_tutorial_two_title">Feedback</string>
+    <string name="try_demo_tutorial_two_content">If you encountered any problems while using this app, or if you have any advices about this app, please don\'t hesitate to tell us.</string>
+    <string name="start_sign_up">Sign Up</string>
+    <string name="start_sign_in">Have an account? Sign in.</string>
+    <string name="start_login_try">Want to try first? Try now.</string>
+    <string name="spannable_string_try">Try now</string>
+    <string name="spannable_string_sign_in">Sign in</string>
+    <string name="try_demo_airtouch_name">Air Purifier</string>
+    <string name="try_demo_water_name">Water Purifier</string>
+    <string name="try_demo_alldevice_title">Virtual Devices</string>
+    <string name="try_demo_feedback_title">Feedback</string>
+    <string name="try_demo_feedback_content">Please give your comments here:</string>
+    <string name="try_demo_feedback_edit_hint">Type your feedback here.</string>
+    <string name="try_demo_feedback_attach_photo">Attach images (Optional)</string>
+    <string name="try_demo_feedback_submit">Submit</string>
+    <string name="try_demo_feedback_take_photo">Take photo</string>
+    <string name="try_demo_feedback_choose_photo">Choose existed photo</string>
+    <string name="try_demo_feedback_submited">Feedback submitted!</string>
+    <string name="try_demo_version_name">XX.XX.XX.XX</string>
+    <string name="feedback_camera_permission">Please grant Camera access!</string>
+    <string name="feedback_storage_permission">Please grant local storage access!</string>
+    <string name="try_demo_entrance">You\'re about to try virtual devices. Please notice that these virtual devices are only for demonstration purpose. Some functions may perform differently than using real devices.</string>
+    <string name="try_demo_feedback_device_related">Device related problem?</string>
+    <string name="try_demo_feedback_select_device">Please select a device</string>
+    <!-- update version-->
+    <string name="check_version_update_now">Update</string>
+    <string name="check_version_new_version">New Version</string>
+
+    <!-- MadAir Enrollment -->
+    <string name="mad_air_enroll_turn_on_device_title">Turn On Device</string>
+    <string name="mad_air_enroll_turn_on_device_desc">Press and hold power button until power light flickering.</string>
+    <string name="mad_air_enroll_turn_on_bluetooth_title">Turn On Bluetooth</string>
+    <string name="mad_air_enroll_turn_on_bluetooth_desc">Please turn on bluetooth of your phone so that app can scanning devices.</string>
+    <string name="mad_air_enroll_manual_select_title">Device Paring</string>
+    <string name="mad_air_enroll_manual_select_desc">Please select a device.</string>
+    <string name="mad_air_enroll_manual_select_pair">Pair</string>
+    <string name="mad_air_enroll_manual_select_pairing">Pairing</string>
+    <string name="mad_air_enroll_name_device_title">Name Your Device</string>
+    <string name="mad_air_enroll_name_device_desc">Give your device a name so that you can distinguish it from other devices.</string>
+    <string name="mad_air_enroll_name_device_hint">My Mad Air</string>
+    <string name="mad_air_enroll_pair_fail_title">No Device Found</string>
+    <string name="mad_air_enroll_pair_fail_desc">Failed to find the device! You can try steps below to retry.</string>
+    <string name="mad_air_enroll_not_support">This device requires Android 4.3 or above. </string>
+
+    <string name="mad_air_enroll_pair_fail_detail">1. Make sure your device is power on. If not, you can press and hold power button until hear a chime and power light is flickering.\n\n2. Keep your device close to your phone.</string>
+
+    <string name="mad_air_enroll_device_type">Mask</string>
+    <string name="mad_ari_enrolled_already">This device has already been enrolled by you!</string>
+    <string name="mad_air_enroll_setting">Setting</string>
+    <string name="mad_air_enroll_same_name">This device name already exists.</string>
+
+    <!-- MadAir Dashboard -->
+    <string name="mad_air_dashboard_breath_unit">times/min</string>
+    <string name="mad_air_dashboard_breath_current">Current breath rate</string>
+    <string name="mad_air_dashboard_speed_title">Air volume</string>
+    <string name="mad_air_dashboard_speed_auto">Auto</string>
+    <string name="mad_air_dashboard_speed_low">Breeze</string>
+    <string name="mad_air_dashboard_speed_medium">Gale</string>
+    <string name="mad_air_dashboard_speed_high">Hurricane</string>
+    <string name="mad_air_dashboard_status_connected">Connected</string>
+    <string name="mad_air_dashboard_status_disconnect">Disconnected</string>
+    <string name="mad_air_dashboard_status_using">Wearing</string>
+    <string name="mad_air_dashboard_percent_unit">%</string>
+    <string name="mad_air_dashboard_battery">Battery</string>
+    <string name="mad_air_dashboard_battery_charge">Charge your mask</string>
+    <string name="mad_air_dashboard_filter">Filter</string>
+    <string name="mad_air_dashboard_filter_buy">Buy new filter</string>
+    <string name="mad_air_dashboard_filter_install">Please insert filter!</string>
+    <string name="mad_air_dashboard_no_data">---</string>
+    <string name="mad_air_dashboard_open_bluetooth">Turn on bluetooth of you phone.</string>
+    <string name="mad_air_dashboard_open_mask">Power mask on and keep it close.</string>
+    <string name="mad_air_dashboard_filtered_particulars">Filtered Particles</string>
+    <string name="mad_air_dashboard_filtered_total">Total</string>
+    <string name="mad_air_dashboard_freq_calculating">Calculating…</string>
+    <plurals name="mad_air_dashboard_battery_remain_hour">
+        <item quantity="one">About 1 hour left</item>
+        <item quantity="other">About %1$s hours left</item>
+    </plurals>
+    <plurals name="mad_air_dashboard_battery_remain_min">
+        <item quantity="one">About 1 minute left</item>
+        <item quantity="other">About %1$s minutes left</item>
+    </plurals>
+    <plurals name="mad_air_dashboard_filter_remain_hour">
+        <item quantity="one">About 1 hour left</item>
+        <item quantity="other">About %1$s hours left</item>
+    </plurals>
+    <string name="mad_air_dashboard_default_unit">ug</string>
+    <string name="mad_air_dashboard_g_unit">mg</string>
+    <string name="mad_air_dashboard_kg_unit">g</string>
+    <string name="mad_air_dashboard_kgg_unit">kg</string>
+    <!-- MadAir AllDevice -->
+    <string name="mad_air_dashboard_need_mask">Mask needed</string>
+    <string name="mad_air_dashboard_wear_mask">Recommend to wear mask</string>
+    <string name="mad_air_filter_status">Filter Status</string>
+    <string name="location_city">City</string>
+    <string name="location_selected_city">Selected city</string>
+    <string name="location_selected_city_hint">Input your city name</string>
+    <string name="location_auto_locating">Auto locating</string>
+    <string name="location_locating">Locating</string>
+    <string name="location_locating_fail">Locating failed!</string>
+    <string name="mad_air_mask">Mask</string>
+    <string name="location_locating_manual_remind">PM 2.5 value of your city will be used to calculate filtered particular matters of mask devices. Changing city may cause a wrong calculation. Please make sure you select the right city.</string>
+    <string name="add_location">Add City</string>
+    <string name="mad_air_locating_fail">Locating failed! Tap the button below to add a city.</string>
+    <string name="mad_air_delete">Deleting this device will also remove all of its data from your phone. Are you sure to proceed?</string>
+    <!-- MadAir Integration -->
+    <string name="try_demo_madair_name">Smart Mask</string>
+    <string name="try_demo_top_tip">Tap here to quit demo mode</string>
+
+    <!-- new Emotion-->
+    <string name="emotion_title_air">Air</string>
+    <string name="emotion_title_water">Water</string>
+    <string name="emotion_indoor_air">Device Average</string>
+    <string name="emotion_outdoor_air">City Average</string>
+    <string name="emotion_indoor_water">Original</string>
+    <string name="emotion_outdoor_water">Filtered</string>
+    <string name="emotion_indoor_air_worse">If indoor air quality is worse than outdoor, it could be possibly caused by new decoration, smoking etc, or even expired filters.</string>
+    <string name="emotion_indoor_water_worse">If filtered water quality is worse than original, it could possibly caused by expired filters or pipes in device is too dirty.</string>
+    <string name="emotion_line_chart_title_water">TDS (Total dissolved solids)</string>
+    <string name="emotion_data_break_point_air">Device offline will make line discontinuous. Please keep device online to maintain continuous data.</string>
+    <string name="emotion_data_break_point_water">Device offline will make original TDS data discontinuous. No water use in a day will make filtered TDS data discontinuous.</string>
+    <string name="water_default_unit">L</string>
+    <string name="water_m_unit">m³</string>
+    <string name="water_filtered_particulars">Purified Water</string>
+    <string name="emotion_air_unit">µg/m³</string>
+    <string name="storage_permission">Allow H Plus access to Storage in system Settings</string>
+    <string name="confirm_filter_status">Make sure filter is mounted and wear mask firmly.</string>
+    <string name="emotion_water_total_message">Purified Water volume is calculated by Honeywell water purifiers. Total purified volume means a sum of volume since you enrolled Honeywell water purifiers in this home.</string>
+    <string name="emotion_air_device_average_message">PM2.5 Device Average is average daily indoor PM2.5 value detected by Honeywell air purifier devices in this home.</string>
+    <string name="emotion_air_city_average_message">PM2.5 City Average is average daily based PM2.5 value of your city.  The data is provided by third party data provider Thinkpage.</string>
+    <string name="emotion_air_total_message">Filter Particles weight is calculated by detected PM2.5 value, air volume and device running time etc. It is an emulated value and may not equal to the real weight of filtered particles. Total weight means a sum of weight since you enrolled Honeywell air purifiers in this home.</string>
+    <string name="emotion_air_approx">Approx.</string>
+</resources>

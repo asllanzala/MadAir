@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <!-- battery -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- battery circle -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/battery_percentage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:textColor="@color/black"
+                android:textSize="50sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/battery_percentage_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/battery_percentage_tv"
+                android:layout_toEndOf="@id/battery_percentage_tv"
+                android:text="@string/mad_air_dashboard_percent_unit"
+                android:textColor="@color/black_50"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <com.honeywell.hch.airtouch.ui.main.ui.dashboard.madair.view.ArcProgressBar
+                android:id="@+id/bar_battery"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                app:back_color="@color/gray_line"
+                app:back_width="5dp"
+                app:front_width="5dp"
+                app:is_need_content="true"
+                app:is_need_unit="true"
+                app:max_value="100"
+                app:process_color="@color/red_one"
+                app:string_unit="%"
+                app:total_engle="360" />
+
+
+        </RelativeLayout>
+
+        <!-- battery description -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mad_air_dashboard_battery"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/battery_remaining_tv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black_50"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- filter -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="30dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- filter circle -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/filter_percentage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/no_data"
+                android:textSize="50sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/filter_percentage_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/filter_percentage_tv"
+                android:layout_toEndOf="@id/filter_percentage_tv"
+                android:text="@string/mad_air_dashboard_percent_unit"
+                android:textColor="@color/black_50"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <com.honeywell.hch.airtouch.ui.main.ui.dashboard.madair.view.ArcProgressBar
+                android:id="@+id/bar_filter"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                app:back_color="@color/gray_line"
+                app:back_width="5dp"
+                app:front_width="5dp"
+                app:is_need_content="true"
+                app:is_need_unit="true"
+                app:max_value="100"
+                app:process_color="@color/green_one"
+                app:string_unit="%"
+                app:total_engle="360" />
+
+        </RelativeLayout>
+
+        <!-- filter description -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/filter_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/mad_air_dashboard_filter"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/filter_remaining_tv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filter_title_tv"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black_50"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/filter_shopping_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_alignBottom="@id/filter_remaining_tv"
+                android:layout_toEndOf="@id/filter_remaining_tv">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mad_air_dashboard_shopping_bg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mad_air_dashboard_shopping" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

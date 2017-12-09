@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enrollment_bg">
+
+
+    <include
+        android:id="@+id/auth_back_img_title_id"
+        layout="@layout/activity_enroll_title" />
+
+    <ListView
+        android:id="@+id/auth_group_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/auth_back_img_title_id"
+        android:divider="@null"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/setting_bg"
+        android:scrollbars="none"
+        android:visibility="visible">
+    </ListView>
+</RelativeLayout>

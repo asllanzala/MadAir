@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.honeywell.hch.airtouch.ui.common.ui.view.SoftInputAdjustTopView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:drop="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enroll_page_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_id"
+        android:layout_above="@+id/buttom_btn_id"
+        android:scrollbars="none"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/top_layout_id"
+                layout="@layout/user_account_topview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/middler_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout_id"
+                android:layout_marginEnd="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginStart="20dip">
+
+                <TextView
+                    android:id="@+id/contry_str"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="@string/account_country_text_str" />
+
+                <com.honeywell.hch.airtouch.ui.common.ui.view.DropEditText
+                    android:id="@+id/country_drop_edittext_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contry_str"
+                    android:maxLength="14"
+                    drop:dropMode="flow_parent"
+                    drop:hint="@string/wapi_router_security_open"></com.honeywell.hch.airtouch.ui.common.ui.view.DropEditText>
+
+
+                <TextView
+                    android:id="@+id/phone_number_str"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/country_drop_edittext_id"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/account_phone_number_str" />
+
+                <com.honeywell.hch.airtouch.ui.common.ui.view.HPlusEditText
+                    android:id="@+id/phone_number_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phone_number_str"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="14"
+                    android:singleLine="true" />
+
+
+                <TextView
+                    android:id="@+id/password_str"
+                    style="@style/enroll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phone_number_txt"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/enroll_password" />
+
+                <com.honeywell.hch.airtouch.ui.common.ui.view.HPlusEditText
+                    android:id="@+id/password_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/password_str"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="14"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_forget_password"
+                    android:layout_marginTop="10dip"
+                    android:paddingBottom="15dip"
+                    android:paddingRight="15dip"
+                    android:paddingTop="15dip"
+                    style="@style/new_user_text_text"
+                    android:layout_below="@id/password_txt"
+                    android:layout_alignLeft="@id/password_txt"/>
+
+                <TextView
+                    android:id="@+id/new_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_new_user_text"
+                    android:layout_marginTop="10dip"
+                    android:paddingBottom="15dip"
+                    android:paddingLeft="15dip"
+                    android:paddingTop="15dip"
+                    android:layout_below="@id/password_txt"
+                    style="@style/new_user_text_text"
+                    android:layout_alignRight="@id/password_txt"
+                    android:layout_alignBaseline="@id/forgot_password"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/activity_enroll_title" />
+
+
+    <Button
+        android:id="@+id/buttom_btn_id"
+        style="@style/blue_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dip"
+        android:text="@string/enroll_next"
+        android:visibility="visible" />
+
+</com.honeywell.hch.airtouch.ui.common.ui.view.SoftInputAdjustTopView>

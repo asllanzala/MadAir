@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auth_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/title_back_scan">
+
+    <RelativeLayout
+        android:id="@+id/actionbar_tile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/total_tile_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/actionbar_tile_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <FrameLayout
+            android:id="@+id/enroll_back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:onClick="doClick">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/back_icon_white" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/enroll_scan_title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/emotion_share_right_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/camera_help_fl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:onClick="doClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="30dp">
+
+                <ImageView
+                    android:id="@+id/camera_help_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/camera_help"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/camera_light_fl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/camera_help_fl"
+                android:paddingLeft="30dp"
+                android:onClick="doClick"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/camera_light_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/camera_light_open"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout
+        android:id="@+id/network_error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/total_tile_id"></com.honeywell.hch.airtouch.ui.common.ui.view.HplusNetworkErrorLayout>
+
+</RelativeLayout>

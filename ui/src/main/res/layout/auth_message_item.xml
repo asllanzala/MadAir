@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auth_message_item_ry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="25dp">
+
+    <LinearLayout
+        android:id="@+id/auth_message_item_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/auth_message_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/auth_message_title_ry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_title">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/auth_message_title_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/message_auth_icon" />
+
+                <TextView
+                    android:id="@+id/auth_message_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/auth_message_title_iv"
+                    android:text="@string/authorize_message_invitation"
+                    android:textColor="@color/enroll_grey"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/auth_message_contenl_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/auth_message_name_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/auth_message_name_key_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/authorize_message_from"
+                    android:textColor="@color/group_edit_text_background"
+                    android:textSize="12.5sp" />
+
+                <TextView
+                    android:id="@+id/auth_message_name_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jeff"
+                    android:textColor="@color/auth_device_name_color"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/auth_message_place_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/auth_message_place_key_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/authorize_message_place"
+                    android:textColor="@color/group_edit_text_background"
+                    android:textSize="12.5sp" />
+
+                <TextView
+                    android:id="@+id/auth_message_place_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vincent's Home "
+                    android:textColor="@color/auth_device_name_color"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/auth_message_device_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/auth_message_device_key_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/authorize_message_device"
+                    android:textColor="@color/group_edit_text_background"
+                    android:textSize="12.5sp" />
+
+                <TextView
+                    android:id="@+id/auth_message_device_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Air Touch 01 "
+                    android:textColor="@color/auth_device_name_color"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/auth_message_authority_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/auth_message_authority_key_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/authorize_message_authority"
+                    android:textColor="@color/group_edit_text_background"
+                    android:textSize="12.5sp" />
+
+                <TextView
+                    android:id="@+id/auth_message_authority_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/authorize_control_role"
+                    android:textColor="@color/auth_device_name_color"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/auth_message_send_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/auth_message_send_key_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/authorize_message_send"
+                    android:textColor="@color/group_edit_text_background"
+                    android:textSize="12.5sp" />
+
+                <TextView
+                    android:id="@+id/auth_message_send_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015/09/10,15:40. "
+                    android:textColor="@color/auth_device_name_color"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/auth_message_expire_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/auth_message_expire_key_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/authorize_message_expire"
+                    android:textColor="@color/group_edit_text_background"
+                    android:textSize="12.5sp" />
+
+                <TextView
+                    android:id="@+id/auth_message_expire_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015/09/11,18:40. "
+                    android:textColor="@color/auth_device_name_color"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/auth_message_remind_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/auth_message_remind_line_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_seperater" />
+
+            <TextView
+                android:id="@+id/auth_message_remind_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/authorize_message_remind"
+                android:textColor="@color/auth_message_remind"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/auth_message_button_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/auth_message_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/auth_message_left_btn"
+                style="@style/message_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:text="Accept" />
+
+            <Button
+                android:id="@+id/auth_message_right_btn"
+                style="@style/message_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:text="Decline" />
+            <!--android:background="@drawable/card_btn_small"-->
+            <!--android:textColor="@color/auth_message_button"-->
+            <!--android:textSize="18sp"-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

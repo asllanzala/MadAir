@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">service</string>
+
+    <string name="wapi_router_security_open">无</string>
+    <string name="wapi_router_security_wep">WEP</string>
+    <string name="wapi_router_security_wpa_aes">WPA AES</string>
+    <string name="wapi_router_security_wpa_tkip">WPA TKIP</string>
+    <string name="wapi_router_security_wpa2_aes">WPA2 AES</string>
+    <string name="wapi_router_security_wpa2_tkip">WPA2 TKIP</string>
+    <string name="wapi_router_security_wpa2_mixed">WPA2 Mixed</string>
+
+    <string name="enroll_home">家的名字</string>
+    <string name="my_home">我的家</string>
+    <string name="places_care_home">我的家</string>
+    <string name="enroll_location">地址的名字</string>
+    <string name="my_location">我的地址</string>
+    <string name="places_care_location">我的地址</string>
+
+    <string name="offline">离线</string>
+    <string name="off">关机</string>
+    <string name="speed_low">低速</string>
+    <string name="speed_medium">中速</string>
+    <string name="speed_high">高速</string>
+
+    <string name="pre_filter">初效过滤网</string>
+    <string name="pm25_filter">高效颗粒物滤网</string>
+    <string name="hisiv_filter">HiSiv过滤网</string>
+    <string name="hisiv_composite_filter">HiSiv复合滤网</string>
+    <string name="filter_instruction">滤网介绍</string>
+
+
+    <string name="pre_filter_instruction">用以滤除毛发以及较大的颗粒物，有效延长其他滤网使用寿命</string>
+    <string name="pm25_filter_instruction">大容量，低阻力，有效去除PM2.5\n和PM0.3颗粒物</string>
+    <string name="hisiv_filter_instruction">可在高湿度情况下维持高效率，去除多种有害气体（甲醛等）</string>
+    <string name="hisiv_450_filter_instruction">HiSivTM 复合滤网，有效过滤颗粒物及甲醛</string>
+
+    <string name="hisiv_composite_filter_instruction">HiSiv 复合滤网，有效过滤颗粒物及甲醛</string>
+
+
+    <string name="airpremium_filter_des">有效过滤PM2.5 颗粒物及甲醛</string>
+    <string name="airpremium_filter_title">PolyTech多效滤网</string>
+
+    <string name="composite_filter">复合滤芯</string>
+    <string name="aqua_600_membrane_filter">600G反渗透滤芯</string>
+    <string name="aqua_400_membrane_filter">400G反渗透滤芯</string>
+
+    <string name="aqua_100_membrane_filter">100G反渗透滤芯</string>
+    <string name="aqua_75_membrane_filter">75G反渗透滤芯</string>
+    <string name="aqua_50_membrane_filter">50G反渗透滤芯</string>
+
+    <string name="carbon_filter">后置活性炭滤芯</string>
+    <string name="composite_filter_instruction">拦截泥沙、铁锈、悬浮物、杂质等，去除异色、异味、余氯。</string>
+    <string name="membrane_filter_instruction">去除水中重金属、细菌。</string>
+    <string name="carbon_filter_instruction">进一步提升出水口感。</string>
+
+    <string name="tvoc450_good">好</string>
+    <string name="tvoc450_average">中</string>
+    <string name="tvoc450_poor">差</string>
+
+    <string name="water_home_mode">日常</string>
+    <string name="water_away_mode">假日</string>
+    <string name="water_abnormal">异常</string>
+
+    <string name="water_pump_over_alarm">检测到设备制水已超过30分钟！为安全起见，设备已关闭。\n请重新上电（拔插电源），设备将自动恢复。如果无法自动恢复，请联系客服。</string>
+    <string name="pump_bootup_alarm">检测到设备短时间内制水次数过于频繁！为安全起见，设备已关闭。\n请重新上电（拔插电源），设备将自动恢复。如果无法自动恢复，请联系客服。</string>
+    <string name="pump_fault_alarm">检测到设备故障！故障代码：010。\n请联系客服。</string>
+    <string name="pipe_block_alarm">检测到设备故障！故障代码：011。\n请联系客服。</string>
+    <string name="inftds_alarm">检测到设备故障！故障代码：012。\n请联系客服。</string>
+    <string name="outtds_alarm">检测到设备故障！故障代码：013。\n请联系客服。</string>
+    <string name="water_leak_alarm">检测到设备漏水！为安全起见设备阀门已关闭。\n请尝试清理积水盒，机器会自动恢复。如机器无法自动恢复，请立即关闭进水三角阀，并联系客服。</string>
+    <string name="eeprom_alarm">检测到设备故障！故障代码：015。\n请联系客服。</string>
+    <string name="no_water">检测到设备入水水压不足！设备已停止工作。\n请检查供水是否已停水或水压不足，等待供水正常后，机器将自动恢复。如供水正常后，机器仍无法自动恢复，请立即关闭进水三角阀，并联系客服。</string>
+    <string name="water_unknow_alarm">检测到设备发生未知故障！\n请联系客服。</string>
+
+    <string name="control_auto">自动</string>
+    <string name="control_quick">快速</string>
+    <string name="control_silent">静音</string>
+    <string name="control_sleep">睡眠</string>
+
+    <string name="all_device_fan_speed">风速%s</string>
+
+    <string name="authorize_control_role">控制者</string>
+    <string name="authorize_viewer_role">观察者</string>
+    <string name="authorize_master_role">管理员</string>
+    <string name="authorize_wait">等待中</string>
+    <string name="authorize_accept">已接受</string>
+
+    <string name="authorize_message_title_accept">设备分享邀请已被接受</string>
+    <string name="authorize_message_title_decline">设备分享邀请已被拒绝</string>
+    <string name="authorize_message_remove">分享设备已被移除</string>
+    <string name="authorize_message_invitation">设备分享邀请</string>
+    <string name="authorize_message_degrade">设备分享角色变更</string>
+    <string name="authorize_message_revoke">分享设备已被收回</string>
+    <string name="authorize_send_invitation_device">设备</string>
+    <string name="authorize_authorize">分享</string>
+
+    <string name="authorize_revoke">收回</string>
+    <string name="authorize_remove">移除</string>
+
+    <string name="all_device_unsupport_device">未支持设备</string>
+
+    <string name="authorize_group_detail">详情</string>
+    <string name="authorize_send_invitation_group">组</string>
+
+    <string name="authorize_message_device">设备：</string>
+    <string name="authorize_message_group">组：</string>
+    <string name="tell_someone_care">告诉你关心的人</string>
+    <string name="home_manager_home_s">的家</string>
+
+    <string name="group_control_time_out">组控制超时！请重试。</string>
+    <string name="group_control_all_fail">所有设备都没有响应组控制！</string>
+    <string name="mad_air_enroll_name_device">我要风</string>
+    <!-- Mad Air-->
+    <string name="dash_borad_home_menu">家</string>
+    <string name="dash_borad_personal_menu">便携设备</string>
+    <string name="mad_air_portable_devices">便携设备列表</string>
+    <string name="mad_air_disconnected">已断开</string>
+    <string name="mad_air_connected">已连接</string>
+    <string name="mad_air_wearing">使用中</string>
+    <string name="mad_air_filter">滤芯</string>
+
+    <string name="cache_loading_msg_justnow">上次更新： 刚刚 </string>
+    <string name="cache_loading_msg_seconds">上次更新： %1$s 秒前 </string>
+
+    <plurals name="update_minute">
+        <item quantity="other">上次更新：%1$s分钟前</item>
+    </plurals>
+
+    <plurals name="update_hours">
+        <item quantity="other">上次更新：%1$s小时前</item>
+    </plurals>
+
+    <plurals name="update_days">
+        <item quantity="other">上次更新： %1$s天前</item>
+    </plurals>
+</resources>

@@ -1,0 +1,84 @@
+
+def versionMajor = 3
+def versionMinor = 5
+def versionPatch = 1
+def title = "Version"
+def leftbracket = "("
+def content = 000
+def rightbracket = ")"
+def variableFile = new File("version_code.var")
+
+def versionBuild = {
+    println variableFile.exists()
+
+    if (variableFile.exists()){
+        content = variableFile.text.toInteger()
+    }
+    return content
+}.call()
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    dexOptions {
+        incremental true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("/Applications/Android/Honeywell_air.keystore")
+            storePassword "HON123well"
+            keyAlias "air"
+            keyPassword "HON123well"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.honeywell.hch.airtouch"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 41
+        versionName "4.4.5"
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            testCoverageEnabled = false
+            versionNameSuffix = "${leftbracket}" + versionBuild + "${rightbracket}"
+//            versionNameSuffix = "${leftbracket}" + 1 + "${rightbracket}"
+
+            resValue "string", "umeng_key", "56388cd9e0f55af804000644"
+            resValue "string", "baidu_lbsapi_key", "HFeZQuB0FErsL3rjdZz1dey9"
+            resValue "string", "push_api_key", "HFeZQuB0FErsL3rjdZz1dey9"
+            resValue "string", "dev_environment_key", "debug"
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            testCoverageEnabled = false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "umeng_key", "552e1fabfd98c5d7e80001be"
+            resValue "string", "baidu_lbsapi_key", "lgcqut7YSvoVxcdQQrtgu5rw"
+            resValue "string", "push_api_key", "lgcqut7YSvoVxcdQQrtgu5rw"
+            resValue "string", "dev_environment_key", "release"
+
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile project(':ui')
+}
+

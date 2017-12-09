@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auth_notify_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_below="@+id/auth_back_img_title_id"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/auth_notify_single_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/info_single"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/auth_notify_multi_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/info_multi"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/auth_notify_from_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/auth_notify_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="From Jeff"
+            android:textColor="@color/enroll_grey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/auth_notify_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/authorize_invitation"
+            android:textColor="@color/enroll_grey"
+            android:textSize="12.5sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/auth_children_arrow_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/menu_arrow_right"
+        android:onClick="backClick" />
+
+</RelativeLayout>
